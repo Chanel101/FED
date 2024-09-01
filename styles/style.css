@@ -28,4 +28,30 @@
 /****************/
 
 /* jouw code */
+@font-face {
+	font-family: ;
+	src: url();
+}
 
+body {
+	font-family: ;
+}
+
+h1 {
+	font-family: ;
+	font-size: ;
+	font-weight: ;
+	font-style: ;
+	letter-spacing: ;
+	word-spacing: ;
+	text-shadow: ;
+	text-decoration: ;
+	text-decoration: ;
+}
+
+p {
+	line-height: ;
+	text-indent: ;
+	text-align: ;
+	width: 50ch;
+}
