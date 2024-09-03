@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp: https://www.anime-planet.com/
+  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp: https://www.pairidaiza.eu/nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/profielpagina_animeplanet.png" width="375px" alt="De pagina waar je je profiel te zien krijgt. Je ziet ook hoeveel anime en manga je hebt gezien, daarnaast krijg je ook nog suggesties te zien, je favoriete personages en comments.">
+  <img src="readme-images/PairiDaiza_Home.png" width="375px" alt="De homepagina waar je de meest algemene informatie kan terugvinden.">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/detailpagina-anime.png" width="375px" alt="Hier krijg je een beschrijving van de anime en meer details, reviews, je kan een rating geven, welke animes of manga's bij deze anime horen, je kan kiezen tussen karakters die je leuk vindt en welke niet en je krijgt te zien wie deze anime gemaakt heeft.">
+  <img src="readme-images/PairiDaiza_Families.png" width="375px" alt="De familie pagina, hier kan je je kijken wat voor opties er zijn als je met de familie Pairi Daiza gaat bezoeken.">
  
 </details>
 
