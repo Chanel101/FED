@@ -57,6 +57,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  Eigen website (Pairi Daiza)
+  - Verschillende buttons hebben niet een betekenis gekregen, dus weet de gebruiker niet wat de button voor functie heeft in de navigatie.
+  - De galerij met slider krijgt geen duidelijke naam en de gebruiker weet niet dat het een galerij is waar je door kan schuiven naar rechts.
+  - Heel veel afbeeldingen worden zo maar overgeslagen.
+  - De afbeeldingen hebben ook geen uitleg over wat er te zien is op de afbeeldingen.
+  - Het is best wel lastig met de sneltoetsen te navigeren om alles te horen.
+  - De structuur van de website via de screenreader klopt wel van boven naar beneden.
+
+Ingmar's website (Hema)
+  - De navigatie klopt maar de reader gaat eerst naar het logo terwijl er nog linkjes boven staan.
+  - Wanneer de reader bij het winkelmandje komt begint hij gelijk over het inloggen, terwijl dat nog nergens te zien is op de website.
+  - Hij raakt helemaal in de war bij het begin.
+  
 
 </details>
 
