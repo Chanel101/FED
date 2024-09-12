@@ -6,10 +6,6 @@
 }
 
 
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -19,10 +15,6 @@
 	--color-background:#eee;
 }
 
-
-
-
-
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -30,7 +22,7 @@
 /* jouw code */
 @font-face {
 	font-family: "Marcellus";
-	src: url(marcellus-regular-webfont.woff2) format("woff2");
+	src: url("/font/marcellus-regular-webfont.woff2") format("woff2");
 }
 
 body {
@@ -39,14 +31,6 @@ body {
 
 h1 {
 	font-family: "Marcellus";
-	font-size: ;
-	font-weight: ;
-	font-style: ;
-	letter-spacing: ;
-	word-spacing: ;
-	text-shadow: ;
-	text-decoration: ;
-	text-decoration: ;
 }
 
 p {
