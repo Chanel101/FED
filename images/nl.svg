@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 841.89 1190.55">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <polyline class="cls-1" points="411.47 600.57 411.47 591.38 419.38 599.3 419.38 589.85"/>
+  <path class="cls-1" d="M424.49,591.13"/>
+  <polyline class="cls-1" points="424.49 589.85 424.49 599.98 430.11 599.98"/>
+</svg>

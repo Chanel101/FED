@@ -29,16 +29,16 @@
 
 /* jouw code */
 @font-face {
-	font-family: ;
-	src: url();
+	font-family: "Marcellus";
+	src: url(marcellus-regular-webfont.woff2) format("woff2");
 }
 
 body {
-	font-family: ;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 
 h1 {
-	font-family: ;
+	font-family: "Marcellus";
 	font-size: ;
 	font-weight: ;
 	font-style: ;
