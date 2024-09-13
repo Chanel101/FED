@@ -114,7 +114,7 @@ Ingmar's website (Hema)
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
-
+    Hamburgermenu
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
