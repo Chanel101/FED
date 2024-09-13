@@ -81,13 +81,15 @@ Ingmar's website (Hema)
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets_1.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets_2.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets_3.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/navigatie_breakdownschets.png width="375px" alt="breakdown van een dynamisch deel, de navigatie met en hamburgermenu">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/inschrijfformulier_breakdownschets.png" width="375px" alt="breakdown van het inschrijfformulier">
 
 </details>
 
@@ -242,8 +244,8 @@ Ingmar's website (Hema)
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
+  1. het dropdown menu waar je kan kiezen tussen verschillende talen enzovoort, heb dit gevonden door de developer tools van Mozilla Firefox. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select 
+  2. De checkbox heb ik ook gevonden in de developer tools van Mozilla Firefox. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox 
   3. ...
 
 </details>
