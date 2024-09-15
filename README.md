@@ -121,12 +121,14 @@ Ingmar's website (Hema)
 
   - hamburgermenu, zeker de oefening doen die het meest op je eigen menu lijkt.
   - goed opgebouwde semantische html, goede omkadering van html doet al het meeste.
+  - toegankelijkheidstest mag uitgebreider.
   - alles uitklappen en dat in de html zetten.
   - Niet alles hoeft in lijstjes.
   - H1 mag toegevoegd worden, je kan display none. Je kan hem in een boxje. paginatitel is wel fijn voor de screenreader.
   - H2 kunnen apart gestyled worden met class.
   - H3 is alleen wanneer in h2 er weer een ander onderdeel.
   - Classes gebruiken waar het logisch, correct is en waar je niks anders kan gebruiken.
+  - img:nth of type (odd/even) kan ook voor even en oneven img, ...
 
 </details>
 
