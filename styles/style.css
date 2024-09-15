@@ -11,8 +11,11 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text:#262626;
+	--color-background:#f2f2f2;
+	--color-highlight: #dc9d23;
+	--text-footer:#808080;
+	--color-background-footer:#d9d9d9;
 }
 
 /****************/
@@ -27,23 +30,65 @@
 
 body {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+	margin: 0;
+
 }
 
 h1 {
 	font-family: "Marcellus";
+	font-size: 3em;
+	line-height: 110%;
 }
 
+
+
 p {
-	line-height: ;
-	text-indent: ;
-	text-align: ;
-	width: 50ch;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	font-weight: 300;
+	
 }
 
 /************/
 /* HEADER */
 /**********/
+header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 
+header nav {
+	z-index: 1;
+	flex-grow: 1;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	gap: 0.0625em;
+}
+
+header nav li {
+	flex-grow: 1;
+	min-width: 6em;
+}
+
+header nav a {
+	text-decoration: none;
+	outline: none;
+	display: block;
+	line-height: 3.5em;
+	text-align: center;
+}
+
+nav ul:first-of-type {
+	width: 0.5em;
+	height: 1em;
+}
 
 /*********/
 /* MAIN */
@@ -53,7 +98,13 @@ p {
 /************/
 /* FOOTER */
 /**********/
+footer {
 
+}
+
+footer section:nth-of-type(5) img {
+	width:2em;
+}
 
 /*************/
 /* SECTION 1 */
@@ -64,14 +115,47 @@ p {
 /*************/
 /* SECTION 2 */
 /************/
-
+section:nth-of-type(2) {
+	display: block;
+	flex-direction: column;
+	
+}
 
 /*************/
 /* SECTION 3 */
 /************/
+section:nth-of-type(3) {
 
+}
+
+section:nth-of-type(3) img {
+	width:5em;
+}
+/*************/
+/* SECTION 4 */
+/************/
+
+/*************/
+/* SECTION 5 */
+/************/
+
+/*************/
+/* SECTION 6 */
+/************/
+
+/*************/
+/* SECTION 7 */
+/************/
+
+/*************/
+/* SECTION 8 */
+/************/
+
+/*************/
+/* SECTION 9 */
+/************/
 
 
 /*************/
-/* SECTION 4 */
+/* SECTION 10 */
 /************/
