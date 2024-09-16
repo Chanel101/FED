@@ -71,14 +71,9 @@ nav ul {
 	gap: 0.0625em;
 }
 
-nav ul:first-of-type {
-	width: 0.2em;
-	height: 1em;
-}
-
 nav li {
 	flex-grow: 1;
-	min-width: 6em;
+	min-width: 5em;
 }
 
 nav a {
@@ -96,18 +91,13 @@ nav img{
 	margin: 1em;
 }
 
-nav img:first-child{
-	width: 4em;
-	margin: 1em;
-}
-
 nav select{
 	margin: 2em;
 }
 
 iframe {
 	border: 0;
-	width: 23.5em; 
+	width: 24.2em; 
 	height: 19.6875em;
 }
 
