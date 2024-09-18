@@ -25,7 +25,7 @@
 /* jouw code */
 @font-face {
 	font-family: "Marcellus";
-	src: url("/font/marcellus-regular-webfont.woff2") format("woff2");
+	src: url("../font/marcellus-regular-webfont.woff2") format("woff2");
 }
 
 body {
@@ -351,6 +351,7 @@ section:nth-of-type(8) p {
 
 section:nth-of-type(8) img {
 	width: 100vw;
+	background: linear-gradient (to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1));
 }
 
 /*************/
