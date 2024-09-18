@@ -141,9 +141,10 @@ footer section:nth-of-type(6) li{
 /* SECTION 1 */
 /************/
 section:nth-of-type(1) {
-	border: 0.05em solid #808080;
-	height: 40vh;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	height: 45vh;
 	margin: 1em;
+	padding-top: 1em;
 	border-radius: 1.5625em;
 }
 
@@ -153,47 +154,72 @@ section:nth-of-type(1) img {
 	border-radius: 50%;
 }
 
-.buttontext {
+.vierkantmenu {
 	position: relative;
 	display: grid;
+	gap: 0.5em;
 	grid-template-rows: 2em 2em;
-	grid-template-columns: 4em 6em 8em;
-
+	grid-template-columns: 6em 8em 8em;
 }
 
-.buttontext img {
+.vierkantmenu img {
 	grid-column: 1/2;
 	grid-row:1;
+	margin-left: 1em;
 }
 
-.buttontext .vierkant {
+.vierkantmenu .pijl {
+	display: flex;
+	justify-content: center;
+	width: 6vw;
+	height: 4vh;
+	margin-top: 1.5rem;
+}
+
+.vierkantmenu .vierkant {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8rem;
+	text-transform: uppercase;
 	grid-column: 2/3;
 	grid-row:1;
 	margin: 0;
+	margin-top: 1.5em;
 }
 
-.buttontext h3 {
+.vierkantmenu h3 {
+	font-family: "Marcellus";
+	color: var(--color-highlight);
 	grid-column: 2/3;
 	grid-row:2;
 	margin: 0;
 }
 
-section article:nth-of-type(3) {
+section .abonnement {
 	display: grid;
-	grid-template-columns: 2em 14em 2em;
+	background-color: var(--color-text);
+	grid-template-columns: 4em 15em 4em;
 	grid-template-rows: 3em 3em 3em;
 	justify-items: center;
-	align-items: center;
+	border-bottom-right-radius: 1.6rem;
+	border-bottom-left-radius: 1.6rem;
 }
 
 section article:nth-of-type(3) h2 {
 	grid-column: 2/3;
 	grid-row: 1;
+	color: var(--color-highlight);
 }
 
 section article:nth-of-type(3) h3 {
 	grid-column: 2/3;
 	grid-row: 2;
+	font-family: "Marcellus";
+	color: var(--color-background);
+}
+
+section article:nth-of-type(3) .pijl {
+	width: 7vw;
+	height: 4vh;
 }
 
 section article:nth-of-type(3) a {
@@ -309,9 +335,7 @@ section:nth-of-type(4) p{
 /*************/
 /* SECTION 7 */
 /************/
-section:nth-of-type(7) {
-	
-}
+section:nth-of-type(7) 
 /*************/
 /* SECTION 8 */
 /************/
