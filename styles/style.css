@@ -25,7 +25,7 @@
 /* jouw code */
 @font-face {
 	font-family: "Marcellus";
-	src: url("/font/marcellus-regular-webfont.woff2") format("woff2");
+	src: url("../font/marcellus-regular-webfont.woff2") format("woff2");
 }
 
 body {
