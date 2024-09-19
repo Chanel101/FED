@@ -62,22 +62,20 @@ figure {
 /* HEADER */
 /**********/
 nav {
-	display: flex;
-	gap:1em;
 	position: absolute;
+	width: 100vw;
 }
 
 nav ul {
-	margin: 0;
-	padding: 0;
 	list-style: none;
 	display: flex;
-	gap: 0.0625em;
+	flex-direction: row;
+	justify-content: end;
+	align-items: center;
 }
 
 nav li {
-	flex-grow: 1;
-	width: 20vw;
+	width: 12vw;
 }
 
 nav a {
@@ -86,24 +84,20 @@ nav a {
 	display: block;
 	line-height: 3.5em;
 	text-align: center;
-	width: 0.5em;
+	width: 5vw;
 	margin: 1em;
+}
+
+nav img {
+	width: 5vw;
 }
 
 .logo {
-	width: 10vw;
-	margin-left: -0.1em;
-	margin-top: 0.2em;
-}
-
-
-nav img{
-	width: 1em;
-	margin: 1em;
-}
-
-nav select{
-	margin: 2em;
+	display: flex;
+	justify-items: start;
+	margin-left: -37vw;
+	margin-top: -1em;
+	width: 15vw;
 }
 
 video {
@@ -178,8 +172,8 @@ main .vierkantmenu img {
 main .vierkantmenu .pijl {
 	display: flex;
 	justify-content: center;
-	width: 6vw;
-	height: 4vh;
+	width: 2em;
+	height: 2em;
 	margin-top: 1.5rem;
 }
 
@@ -204,9 +198,11 @@ main .vierkantmenu h3 {
 main section .abonnement {
 	display: grid;
 	background-color: var(--color-text);
-	grid-template-columns: 4em 15em 4em;
+	grid-template-columns: 2em 14em 2em;
 	grid-template-rows: 3em 3em 3em;
+	justify-content: center;
 	justify-items: center;
+	align-items: center;
 	border-bottom-right-radius: 1.6rem;
 	border-bottom-left-radius: 1.6rem;
 }
@@ -225,8 +221,8 @@ main section article:nth-of-type(3) h3 {
 }
 
 main section article:nth-of-type(3) .pijl {
-	width: 7vw;
-	height: 4vh;
+	width: 2em;
+	height: 2em;
 }
 
 main section article:nth-of-type(3) a {
@@ -284,8 +280,7 @@ main section:nth-of-type(3) a {
 	padding: 1em;
 	color: var(--color-text);
 	text-decoration: none;
-	margin-left: 3em;
-	margin-right: 5em;
+	width: 12em;
 }
 
 main section:nth-of-type(3) a:hover {
@@ -297,7 +292,6 @@ main section:nth-of-type(3) a:hover {
 /************/
 main section:nth-of-type(4) {
 	display: grid;
-	gap: 5rem;
 }
 
 main .cijfers {
@@ -309,7 +303,6 @@ main .cijfers {
 main section:nth-of-type(4) article{
 	display: flex;
 	flex-direction: column;
-	width: 80vw;
 	margin-left: 10vw;
 	margin-right: 10vw;
 	align-items: center;
@@ -318,6 +311,7 @@ main section:nth-of-type(4) article{
 
 main section:nth-of-type(4) article:last-child {
 	border: none;
+	margin-bottom: 1em;
 }
 
 main section:nth-of-type(4) h2 {
@@ -332,13 +326,7 @@ main section:nth-of-type(4) p{
 /*************/
 /* SECTION 5 */
 /************/
-
-
-
-/*************/
-/* SECTION 6 */
-/************/
-main section:nth-of-type(6) ul {
+main section:nth-of-type(5) ul {
 	display: flex;
 	gap: 0.5em;
 	padding: 1em;
@@ -346,15 +334,61 @@ main section:nth-of-type(6) ul {
 	list-style: none;
   	overflow-x: scroll;
   	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	position: relative;
+}
+
+main section:nth-of-type(5) ul li {
+	flex-shrink: 0;
+	width: 20em;
+	height: 60vh;
+	background-color: #FFF;
+	scroll-snap-align: center;
+	position: relative;
+  }
+  
+  main section:nth-of-type(5) ul li img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10%;
+  }
+  
+  main section:nth-of-type(5) h2 {
+	text-align: center;
+	font-size: 2em;
+	margin: 0;
+  }
+  
+  main section:nth-of-type(5) ul li h3 {
+	font-family: "Marcellus";
+	position: absolute;
+	bottom: -0.5em;
+	left: 1em;
+	transform: none;
+	color: white;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: start;
+	z-index: 1;
+  }
+/*************/
+/* SECTION 6 */
+/************/
+main section:nth-of-type(6) ul {
+	display: flex;
+	gap: 0.5em;
+	padding: 1em;
+	list-style: none;
+  	overflow-x: scroll;
+  	scroll-snap-type: x mandatory;
 }
 
 main section:nth-of-type(6) ul li{
 	flex-shrink: 0;
-  	width: 80%;
+  	width: 20em;
   	height: 30vh;
-
   	background-color: #FFF;
-
   	scroll-snap-align: center;
 	position: relative;
 }
@@ -380,8 +414,42 @@ main section:nth-of-type(6) ul li h2 {
 /*************/
 /* SECTION 7 */
 /************/
+main section:nth-of-type(7) ul {
+	display: flex;
+	gap: 0.5em;
+	padding: 1em;
+	list-style: none;
+  	overflow-x: scroll;
+  	scroll-snap-type: x mandatory;
+}
 
+main section:nth-of-type(7) ul li{
+	flex-shrink: 0;
+  	width: 20em;
+  	height: 30vh;
+  	background-color: #FFF;
+  	scroll-snap-align: center;
+	position: relative;
+}
 
+main section:nth-of-type(7) ul li img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10%;
+}
+
+main section:nth-of-type(7) ul li h2 {
+	position: absolute;
+	bottom: -0.5em;
+	left: -0.5em;
+	transform: none;
+	color: white;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: start;
+	z-index: 1;
+}
 /*************/
 /* SECTION 8 */
 /************/
@@ -411,7 +479,7 @@ main section:nth-of-type(8) h2 {
 	color: var(--color-background);
 }
 
-main section:nth-of-type(8) article h2 {
+main section:nth-of-type(8) h2 {
 	color: var(--color-highlight);
 	font-size: 3em;
 	margin: 0;
@@ -442,11 +510,93 @@ main .gradient img {
 	width: 100vw;
 	height: 100%;
 }
+
+main section .animals {
+	display: flex;
+	gap: .8em;
+	flex-direction: column;
+	width: 80%;
+	background-color: var(--color-background-footer);
+	border: 0.05em solid #808080;
+	border-radius: 1.5625em;
+	padding: 0.7em;
+	padding-bottom: 2em;
+	margin-left: 5em;
+	margin-right: 0.9em;
+	margin-bottom: 3em;
+}
+
+main section .animals h2 {
+	font-size: 20px;
+	text-align: start;
+	width: 50vw;
+	margin-left: 1em;
+	align-self: flex-start;
+	color: var(--color-text);
+}
+
+main section .animals p {
+	font-size: 12px;
+	margin-left: 1em;
+	margin-right: 1em;
+	color: var(--color-text);
+}
+
+main section .animals a:nth-child(1) {
+	text-decoration: none;
+	color: var(--color-highlight);
+}
+
+main section .animals .link {
+	border: 0.05em solid #dc9d23;
+	border-radius: 3em;
+	padding: 1em;
+	color: var(--color-text);
+	text-decoration: none;
+	width: 13em;
+}
+
 /*************/
 /* SECTION 9 */
 /************/
+main section:nth-of-type(9) {
+	position: relative;
+	margin-top: 3em;
+	margin-left: 2em;
+	margin-right: 3em;
+	margin-bottom:3em;
+}
 
+main section .member2 {
+	font-size: 30px;
+	margin: 0;
+}
 
+main section .member {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: var(--color-highlight);
+	text-transform: uppercase;
+	margin: 0;
+	margin-bottom: 1em;
+}
+
+main section:nth-of-type(9) h3 {
+	font-family: "Marcellus";
+}
+
+main section:nth-of-type(9) p {
+	margin-bottom: 2em;
+}
+
+main section:nth-of-type(9) a {
+	border: 0.05em solid #dc9d23;
+	border-radius: 3em;
+	padding: 0.7em;
+	color: var(--color-text);
+	text-decoration: none;
+	width: 13em;
+}
 /*************/
 /* SECTION 10 */
 /************/
@@ -466,6 +616,7 @@ main .gradient img {
 /********************/
 footer section:nth-of-type(2) {
 	display: grid;
+	
 
 }
 
