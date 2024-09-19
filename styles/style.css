@@ -119,25 +119,9 @@ footer {
 footer h2 {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
-.socials {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	list-style: none;
-}
-
-.socials img {
-	width:2em;
-}
-
-footer section:nth-of-type(6) li{
-	display: flex;
-	justify-content: center;
-	list-style: none;
-	margin: 0.5em;
-}
 /*************/
 /* SECTION 1 */
 /************/
@@ -614,32 +598,127 @@ main section:nth-of-type(9) a {
 /********************/
 /* FOOTER SECTION 2 */
 /********************/
-footer section:nth-of-type(2) {
+footer section:nth-of-type(1) {
+	margin: 4em;
 	display: grid;
-	
+	grid-template-columns: 3em 6em 3em 6em;
+	grid-template-rows: 5em 5em;
 
+}
+
+/*footer section:nth-of-type(1) img {
+	
+}*/
+
+footer section .families {
+	grid-column: 2/3;
+	grid-row: 1;
+}
+
+footer section .bedrijven {
+	grid-column: 3/4;
+	grid-row: 1;
+}
+
+footer section .groepen {
+	grid-column: 2/3;
+	grid-row: 2;
+}
+
+footer section .scholen {
+	grid-column: 3/4;
+	grid-row: 2;
+}
+
+footer section:nth-of-type(1) h2 {
+	font-size: 10px;
+}
+
+footer section:nth-of-type(1) img {
+	width: 2em;
 }
 
 
 /********************/
 /* FOOTER SECTION 3 */
 /********************/
+footer section address {
+	margin-bottom: 3em;
+}
 
+footer section address h2:first-child {
+	font-size: 24px;
+	margin: 1em;
+	color: var(--color-background-2);
+}
 
+footer section address h2 {
+	font-size: 20px;
+	margin: 0.5em;
+	color: var(--text-footer);
+}
 
 
 /********************/
 /* FOOTER SECTION 4 */
 /********************/
+footer section:nth-of-type(3) ul {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
 
-
-
+footer section:nth-of-type(3) img {
+	width: 40vw;
+	margin-left: 2em;
+}
 /********************/
 /* FOOTER SECTION 5 */
 /********************/
+.socials {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	list-style: none;
+}
 
+.socials img {
+	width:2em;
+}
 
+footer .inschrijven {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 3em;
+}
 
+footer button {
+	padding: 1em;
+	border-radius: 20%;
+	border-color: var(--color-highlight);
+}
 /********************/
 /* FOOTER SECTION 6 */
 /********************/
+footer section:nth-of-type(5) li {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0.5em;
+}
+
+footer section:nth-of-type(5) a {
+	text-decoration: none;
+	color: var(--text-footer);
+}
+
+.copyright {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color:var(--text-footer);
+	font-size: 24px;
+	font-family: "Marcellus";
+}
