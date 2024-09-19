@@ -147,7 +147,7 @@ footer section:nth-of-type(6) li{
 /*************/
 /* SECTION 1 */
 /************/
-section:nth-of-type(1) {
+main section:nth-of-type(1) {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	height: 45vh;
 	margin: 1em;
@@ -155,13 +155,13 @@ section:nth-of-type(1) {
 	border-radius: 1.5625em;
 }
 
-section:nth-of-type(1) img {
+main section:nth-of-type(1) img {
 	width: 4em;
 	height: 4em;
 	border-radius: 50%;
 }
 
-.vierkantmenu {
+main .vierkantmenu {
 	position: relative;
 	display: grid;
 	gap: 0.5em;
@@ -169,13 +169,13 @@ section:nth-of-type(1) img {
 	grid-template-columns: 6em 8em 8em;
 }
 
-.vierkantmenu img {
+main .vierkantmenu img {
 	grid-column: 1/2;
 	grid-row:1;
 	margin-left: 1em;
 }
 
-.vierkantmenu .pijl {
+main .vierkantmenu .pijl {
 	display: flex;
 	justify-content: center;
 	width: 6vw;
@@ -183,7 +183,7 @@ section:nth-of-type(1) img {
 	margin-top: 1.5rem;
 }
 
-.vierkantmenu .vierkant {
+main .vierkantmenu .vierkant {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 0.8rem;
 	text-transform: uppercase;
@@ -193,7 +193,7 @@ section:nth-of-type(1) img {
 	margin-top: 1.5em;
 }
 
-.vierkantmenu h3 {
+main .vierkantmenu h3 {
 	font-family: "Marcellus";
 	color: var(--color-highlight);
 	grid-column: 2/3;
@@ -201,7 +201,7 @@ section:nth-of-type(1) img {
 	margin: 0;
 }
 
-section .abonnement {
+main section .abonnement {
 	display: grid;
 	background-color: var(--color-text);
 	grid-template-columns: 4em 15em 4em;
@@ -211,25 +211,25 @@ section .abonnement {
 	border-bottom-left-radius: 1.6rem;
 }
 
-section article:nth-of-type(3) h2 {
+main section article:nth-of-type(3) h2 {
 	grid-column: 2/3;
 	grid-row: 1;
 	color: var(--color-highlight);
 }
 
-section article:nth-of-type(3) h3 {
+main section article:nth-of-type(3) h3 {
 	grid-column: 2/3;
 	grid-row: 2;
 	font-family: "Marcellus";
 	color: var(--color-background);
 }
 
-section article:nth-of-type(3) .pijl {
+main section article:nth-of-type(3) .pijl {
 	width: 7vw;
 	height: 4vh;
 }
 
-section article:nth-of-type(3) a {
+main section article:nth-of-type(3) a {
 	grid-column: 2/3;
 	grid-row: 3;
 	
@@ -238,7 +238,7 @@ section article:nth-of-type(3) a {
 /*************/
 /* SECTION 2 */
 /************/
-section:nth-of-type(2) {
+main section:nth-of-type(2) {
 	position: relative;
 	margin-top: 3em;
 	margin-left: 2em;
@@ -246,7 +246,7 @@ section:nth-of-type(2) {
 	margin-bottom:3em;
 }
 
-section:nth-of-type(2)p {
+main section:nth-of-type(2)p {
 	margin-left: 2em;
 	margin-right: 2em;
 	margin-bottom:3em;
@@ -255,7 +255,7 @@ section:nth-of-type(2)p {
 /*************/
 /* SECTION 3 */
 /************/
-section:nth-of-type(3) {
+main section:nth-of-type(3) {
 	display: flex;
 	gap: .8em;
 	flex-direction: column;
@@ -268,17 +268,17 @@ section:nth-of-type(3) {
 	margin-bottom: 3em;
 }
 
-section:nth-of-type(3) img {
+main section:nth-of-type(3) img {
 	border-radius: 1.5625em;
 }
 
-section:nth-of-type(3) p {
+main section:nth-of-type(3) p {
 	margin-left: 2em;
 	margin-right: 2em;
 	margin-bottom: 2em;
 }
 
-section:nth-of-type(3) a {
+main section:nth-of-type(3) a {
 	border: 0.05em solid #dc9d23;
 	border-radius: 3em;
 	padding: 1em;
@@ -288,25 +288,25 @@ section:nth-of-type(3) a {
 	margin-right: 5em;
 }
 
-section:nth-of-type(3) a:hover {
+main section:nth-of-type(3) a:hover {
 	color: var(--color-highlight);
 	transition-duration: 1s;
 }
 /*************/
 /* SECTION 4 */
 /************/
-section:nth-of-type(4) {
+main section:nth-of-type(4) {
 	display: grid;
 	gap: 5rem;
 }
 
-.cijfers {
+main .cijfers {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-section:nth-of-type(4) article{
+main section:nth-of-type(4) article{
 	display: flex;
 	flex-direction: column;
 	width: 80vw;
@@ -316,16 +316,16 @@ section:nth-of-type(4) article{
 	border-bottom: thin var(--text-footer) solid;
 }
 
-section:nth-of-type(4) article:last-child {
+main section:nth-of-type(4) article:last-child {
 	border: none;
 }
 
-section:nth-of-type(4) h2 {
+main section:nth-of-type(4) h2 {
 	color: var(--color-highlight);
 	font-size: 3em;
 }
 
-section:nth-of-type(4) p{
+main section:nth-of-type(4) p{
 	margin-left: 4em;
 }
 
@@ -338,7 +338,7 @@ section:nth-of-type(4) p{
 /*************/
 /* SECTION 6 */
 /************/
-section:nth-of-type(6) ul {
+main section:nth-of-type(6) ul {
 	display: flex;
 	gap: 0.5em;
 	padding: 1em;
@@ -348,7 +348,7 @@ section:nth-of-type(6) ul {
   	scroll-snap-type: x mandatory;
 }
 
-section:nth-of-type(6) ul li{
+main section:nth-of-type(6) ul li{
 	flex-shrink: 0;
   	width: 80%;
   	height: 30vh;
@@ -359,14 +359,14 @@ section:nth-of-type(6) ul li{
 	position: relative;
 }
 
-section:nth-of-type(6) ul li img {
+main section:nth-of-type(6) ul li img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	border-radius: 10%;
 }
 
-section:nth-of-type(6) ul li h2 {
+main section:nth-of-type(6) ul li h2 {
 	position: absolute;
 	bottom: -0.5em;
 	left: -0.5em;
@@ -377,11 +377,6 @@ section:nth-of-type(6) ul li h2 {
 	text-align: start;
 	z-index: 1;
 }
-
-
-
-
-
 /*************/
 /* SECTION 7 */
 /************/
@@ -390,13 +385,13 @@ section:nth-of-type(6) ul li h2 {
 /*************/
 /* SECTION 8 */
 /************/
-section:nth-of-type(8) {
+main section:nth-of-type(8) {
 	display: grid;
 	gap: 5rem;
 	background-color: var(--color-text);
 }
 
-section:nth-of-type(8) article{
+main section:nth-of-type(8) article{
 	display: flex;
 	flex-direction: column;
 	width: 80vw;
@@ -406,33 +401,33 @@ section:nth-of-type(8) article{
 	border-bottom: thin var(--text-footer) solid;
 }
 
-section:nth-of-type(8) article:last-child {
+main section:nth-of-type(8) article:last-child {
 	border: none;
 }
 
-section:nth-of-type(8) h2 {
+main section:nth-of-type(8) h2 {
 	text-align: center;
 	font-size: 2.236rem;
 	color: var(--color-background);
 }
 
-section:nth-of-type(8) article h2 {
+main section:nth-of-type(8) article h2 {
 	color: var(--color-highlight);
 	font-size: 3em;
 	margin: 0;
 }
 
-section:nth-of-type(8) p {
+main section:nth-of-type(8) p {
 	color: var(--color-background);
 	font-size: 0.813rem;
 }
 
-.gradient{
+main .gradient{
 	position: relative;
 	z-index: 1;
 }
 
-.gradient::before {
+main .gradient::before {
 	content: "";
   	position: absolute;
  	top: 0;
@@ -443,7 +438,7 @@ section:nth-of-type(8) p {
   	z-index: 2;
 }
 
-.gradient img {
+main .gradient img {
 	width: 100vw;
 	height: 100%;
 }
