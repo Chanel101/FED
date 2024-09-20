@@ -280,6 +280,6 @@ Ingmar's website (Hema)
   3. Het menu onder de video heb ik hulp bij gekregen van Diego om hier te werken met grid.
   4. Voor de carousel puur in css heb ik deze code gevolgd. https://www.nieknijland.nl/blog/make-a-responsive-carousel-with-just-css
   5. Voor de gradient op de tijger foto heb ik hulp gekregen van de sutdentenassistent.
-  6.  
+  6. Voor het stylen van de details en summary in de footer heb ik deze code gebruikt. https://www.sitepoint.com/style-html-details-element/ 
 
 </details>
