@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/PairiDaiza_Families.png" width="375px" alt="De familie pagina, hier kan je je kijken wat voor opties er zijn als je met de familie Pairi Daiza gaat bezoeken.">
+  <img src="readme-images/PairiDaiza_cadeaubonnen.png" width="375px" alt="De cadeaubonnen pagina heeft bijna helemaal geen Pairi Daiza huisstijl. Dat wil ik graag veranderen en beter maken.">
  
 </details>
 
@@ -64,6 +64,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - De afbeeldingen hebben ook geen uitleg over wat er te zien is op de afbeeldingen.
   - Het is best wel lastig met de sneltoetsen te navigeren om alles te horen.
   - De structuur van de website via de screenreader klopt wel van boven naar beneden.
+ <img src="readme-images/FED 24-25 - Blok 1 - WCAG checklist_ChanelVercaemst_Pagina_1.png" alt="WCAG pagina 1">
+
+  <img src="readme-images/FED 24-25 - Blok 1 - WCAG checklist_ChanelVercaemst_Pagina_2.png" alt="WCAG pagina 2">
+
+  <img src="readme-images/FED 24-25 - Blok 1 - WCAG checklist_ChanelVercaemst_Pagina_3.png" alt="WCAG pagina 3">
+
+  <img src="readme-images/FED 24-25 - Blok 1 - WCAG checklist_ChanelVercaemst_Pagina_4.png" alt="WCAG pagina 4">
+
+  <img src="readme-images/FED 24-25 - Blok 1 - WCAG checklist_ChanelVercaemst_Pagina_5.png" alt="WCAG pagina 5">
+
 
 Ingmar's website (Hema)
   - De navigatie klopt maar de reader gaat eerst naar het logo terwijl er nog linkjes boven staan.
@@ -103,7 +113,8 @@ Ingmar's website (Hema)
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het ging vooral lastig met de h1 en h2 aanduiden, want ik helemaal naar de h6.
+  Ik weet niet waarom ik zo veel lijstjes heb.
 
 
   ### Agenda voor meeting
@@ -142,7 +153,21 @@ Ingmar's website (Hema)
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Verschillende css die ik doe, gaat ook op andere h2 bijvoorbeeld en dan moet ik die een class geven maar soms veranderde die andere h2 toch niet en dat zorgde best wel voor veel tijd verlies.
+
+  Het maken van het menu onder de video was best wel een uitdaging waar ik toch meer dan een half uur aan heb gezeten samen met Diego. 
+
+  Dingen zoals de nav ging best oke, alleen heb ik een dropdown menu die ik nog moet stylen.
+
+  De footer ging ook best goed, ik moet wel nog iedere details stylen.
+
+  Daarnaast heb ik 3 verschillende carousels en de tweede ging goed, maar de eerste heeft bolletjes onder de carousel maar dat wil maar niet lukken en ik weet echt niet waar ik een goede handleiding hiervoor kan vinden.
+  Daarnaast is de derde carousel een automatische die in een loop doorloopt maar dat kan ik ook niet vinden.
+
+  Ik moet ook nog het hamburgermenu maken.
+
+  Ik moet nog de css doen voor de tweede pagina maar ik denk dat dat makkelijker zal verlopen. Het zal eerder de animatie zijn voor het winkelmandje waar ik mee ga zitten.
+  
 
 
   ### Agenda voor meeting
@@ -252,6 +277,9 @@ Ingmar's website (Hema)
 
   1. het dropdown menu waar je kan kiezen tussen verschillende talen enzovoort, heb dit gevonden door de developer tools van Mozilla Firefox. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select 
   2. De checkbox heb ik ook gevonden in de developer tools van Mozilla Firefox. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox 
-  3. ...
+  3. Het menu onder de video heb ik hulp bij gekregen van Diego om hier te werken met grid.
+  4. Voor de carousel puur in css heb ik deze code gevolgd. https://www.nieknijland.nl/blog/make-a-responsive-carousel-with-just-css
+  5. Voor de gradient op de tijger foto heb ik hulp gekregen van de sutdentenassistent.
+  6.  
 
 </details>
