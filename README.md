@@ -183,10 +183,10 @@ Ingmar's website (Hema)
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - css clip-path maker voor hamburgermenu vanuit een hoek.
+  - main een class geven zo om makkelijk te stylen voor de tweede pagina.
+  - 
+  - 
 
 </details>
 
@@ -279,7 +279,8 @@ Ingmar's website (Hema)
   2. De checkbox heb ik ook gevonden in de developer tools van Mozilla Firefox. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox 
   3. Het menu onder de video heb ik hulp bij gekregen van Diego om hier te werken met grid.
   4. Voor de carousel puur in css heb ik deze code gevolgd. https://www.nieknijland.nl/blog/make-a-responsive-carousel-with-just-css
-  5. Voor de gradient op de tijger foto heb ik hulp gekregen van de sutdentenassistent.
+  5. Voor de gradient op de tijger foto heb ik hulp gekregen van de sutdentenassistent. https://codepen.io/Dave-deo/pen/rNEEEWr?editors=1100 
   6. Voor het stylen van de details en summary in de footer heb ik deze code gebruikt. https://www.sitepoint.com/style-html-details-element/ 
+  7.  
 
 </details>
