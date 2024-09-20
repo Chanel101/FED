@@ -778,3 +778,46 @@ footer section:nth-of-type(5) a {
 	font-size: 24px;
 	font-family: "Marcellus";
 }
+
+
+
+/********************/
+/*pagina2 */
+/********************/
+nav {
+	width: 100vw;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+	align-items: center;
+}
+
+nav li {
+	width: 12vw;
+}
+
+nav a {
+	text-decoration: none;
+	outline: none;
+	display: block;
+	line-height: 3.5em;
+	text-align: center;
+	width: 5vw;
+	margin: 1em;
+}
+
+nav img {
+	width: 5vw;
+}
+
+.logo {
+	display: flex;
+	justify-items: start;
+	margin-left: -37vw;
+	margin-top: -1em;
+	width: 15vw;
+}
