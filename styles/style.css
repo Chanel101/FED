@@ -62,6 +62,10 @@ figure {
 /************/
 /* HEADER */
 /**********/
+header {
+	height: 25vh;
+}
+
 nav {
     position: relative;
     height: 40vw;
@@ -76,7 +80,6 @@ nav {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 20vh;
     overflow: hidden;
     z-index: -1;
 }
@@ -87,27 +90,28 @@ nav {
     object-fit: cover;
 }
 
-/* Stijl voor de navigatie-inhoud */
 nav ul {
     list-style: none;
     margin: 1.25rem;
     padding: 0;
     display: flex;
+	width: 100vw;
 }
 
 nav li {
     margin-right: 3rem;
+	width: 100vw;
 }
 
 nav li img {
-	width: 5vw;
+	width: 1.25em;
 }
 
 nav .logo {
 	margin-left: -1em;
 	margin-top: -0.5em;
-	width: 12vw;
-    height: 5vh;
+	width: 3em;
+    height: 3em;
 }
 
 select {
@@ -116,7 +120,7 @@ select {
 }
 
 .headerup, .headerdown {
-	height: 8vh;
+	height: 10vh;
 	width: 100vw;
 	position: fixed;
 	z-index: 1;
@@ -131,18 +135,7 @@ select {
 	background-color: white;
 	top: 0;
 }
-/************/
-/* FOOTER */
-/**********/
-footer {
-	background-color: var(--color-background-footer);
-}
 
-footer h2 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 /*********/
 /* MAIN */
 /********/
@@ -172,11 +165,19 @@ main .menu img {
 }
 
 main .vierkantmenu {
+	background-color: var(--color-background);
+	border-top-left-radius: 1.6rem;
+	border-top-right-radius: 1.6rem;
+	padding-top: 0.5rem;
 	position: relative;
 	display: grid;
 	gap: 0.5em;
 	grid-template-rows: 2em 2em;
 	grid-template-columns: 6em 8em 8em;
+}
+
+main .vierkantmenu:nth-of-type(2) {
+	border-radius: 0;
 }
 
 main .vierkantmenu img {
@@ -244,7 +245,6 @@ main .menu article:nth-of-type(3) .pijl {
 main .menu article:nth-of-type(3) a {
 	grid-column: 2/3;
 	grid-row: 3;
-	
 }
 
 /*************/
@@ -313,13 +313,7 @@ main .rapport a p {
 /************/
 main .cijfers {
 	display: grid;
-}
-
-main .cijfers h2 {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-size: 2em;
+	gap: 5rem;
 }
 
 main .cijfers article {
@@ -336,13 +330,19 @@ main .cijfers article:last-child {
 	margin-bottom: 2em;
 }
 
+main .cijfers h2 {
+	text-align: center;
+	font-size: 2em;
+}
+
 main .cijfers article h2 {
 	color: var(--color-highlight);
 	font-size: 3em;
+	margin: 0;
 }
 
 main .cijfers p {
-	margin-left: 4em;
+	text-align: center;
 }
 
 /*************/
@@ -641,8 +641,18 @@ main .member .link p {
 /* SECTION 10 */
 /************/
 
+/************/
+/* FOOTER */
+/**********/
+footer {
+	background-color: var(--color-background-footer);
+}
 
-
+footer h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 /********************/
 /* FOOTER SECTION 1 */
@@ -823,4 +833,27 @@ footer section:nth-of-type(5) a {
 	color:var(--text-footer);
 	font-size: 1.5em;
 	font-family: "Marcellus";
+}
+
+/************/
+/* PAGINA 2 */
+/************/
+.pagina2 {
+	height: 10vh;
+}
+
+.main2 {
+	margin: 1.5rem;
+}
+
+main .zoeken {
+	display: flex;
+	flex-direction: row;
+	gap: 8.5rem;
+}
+
+main .zoeken input {
+	width: 20vw;
+	height: 5vh;
+	align-self: center;
 }
