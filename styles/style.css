@@ -633,9 +633,6 @@ main .member .link p {
 	margin-top: 1.5em;
 	color: var(--color-highlight);
 }
-/*************/
-/* SECTION 10 */
-/************/
 
 /************/
 /* FOOTER */
@@ -653,8 +650,6 @@ footer h2 {
 /********************/
 /* FOOTER SECTION 1 */
 /********************/
-
-
 details {
 	display: inline-block;
 }
@@ -698,8 +693,6 @@ details a {
 	color: var(--text-footer);
 	text-transform: uppercase;
 }
-  
-
 
 /********************/
 /* FOOTER SECTION 2 */
@@ -707,28 +700,27 @@ details a {
 footer section:nth-of-type(1) {
 	margin: 4em;
 	display: grid;
-	grid-template-columns: 3em 6em 3em 6em;
+	grid-template-columns: 2em 5em 2em 5em;
 	grid-template-rows: 5em 5em;
-
 }
 
 footer section .families {
-	grid-column: 2/3;
+	grid-column: 2;
 	grid-row: 1;
 }
 
 footer section .bedrijven {
-	grid-column: 3/4;
+	grid-column: 4;
 	grid-row: 1;
 }
 
 footer section .groepen {
-	grid-column: 2/3;
+	grid-column: 2;
 	grid-row: 2;
 }
 
 footer section .scholen {
-	grid-column: 3/4;
+	grid-column: 4;
 	grid-row: 2;
 }
 
@@ -739,7 +731,6 @@ footer section:nth-of-type(1) h2 {
 footer section:nth-of-type(1) img {
 	width: 2em;
 }
-
 
 /********************/
 /* FOOTER SECTION 3 */
@@ -842,6 +833,10 @@ footer section:nth-of-type(5) a {
 	margin: 1.5rem;
 }
 
+.main2 h2 {
+	margin: 0;
+}
+
 main .zoeken {
 	display: flex;
 	flex-direction: row;
@@ -852,4 +847,77 @@ main .zoeken input {
 	width: 20vw;
 	height: 5vh;
 	align-self: center;
+}
+
+
+/*******/
+/*TABLE*/
+/*******/
+
+table img {
+	width: 3em;
+	margin-right: 1em;
+}
+
+table {
+	margin-top: 2em;
+	width: 100vw;
+}
+
+table h2 {
+	font-size: 1em;
+}
+
+/***********/
+/*SECTION1*/
+/**********/
+.dagticket h2, .membershipcard h2 {
+	color: var(--color-highlight);
+}
+
+
+.dagticket p:first-of-type {
+	font-weight: bolder;
+}
+
+.dagticket p:nth-of-type(2) {
+	font-weight: bolder;
+}
+
+/***********/
+/*SECTION2*/
+/**********/
+
+.membershipcard p:first-of-type {
+	font-weight: bolder;
+}
+
+/***********/
+/*SECTION3*/
+/**********/
+
+
+/***********/
+/*SECTION4*/
+/**********/
+
+/***********/
+/*SECTION5*/
+/**********/
+
+
+/***********/
+/*SECTION6*/
+/**********/
+.info ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.info li a {
+	text-decoration: none;
+	color: var(--text-footer);
+	font-size: 0.5em;
 }
