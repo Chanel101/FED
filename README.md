@@ -281,6 +281,6 @@ Ingmar's website (Hema)
   4. Voor de carousel puur in css heb ik deze code gevolgd. https://www.nieknijland.nl/blog/make-a-responsive-carousel-with-just-css
   5. Voor de gradient op de tijger foto heb ik hulp gekregen van de sutdentenassistent. https://codepen.io/Dave-deo/pen/rNEEEWr?editors=1100 
   6. Voor het stylen van de details en summary in de footer heb ik deze code gebruikt. https://www.sitepoint.com/style-html-details-element/ 
-  7.  
+  7.  Hamburgermenu laten verschijnen en verdwijnen via javascript. https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
 </details>

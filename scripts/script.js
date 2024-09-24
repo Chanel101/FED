@@ -1,5 +1,8 @@
 // JavaScript Document
 const header = document.querySelector('#firstHeader')
+const menuButton = document.querySelector('#menuButton')
+const exitButton = document.querySelector('#exitButton')
+const menu = document.getElementById('hamburgermenu')
 let lastScrollTop = 0;
 let scrollFromTop;
 
@@ -19,3 +22,14 @@ function scrollHide() {
   lastScrollTop = scrollFromTop <= 0 ? 0 : scrollFromTop;
 }
 window.onscroll = function(){scrollHide()};
+
+function openMenu(){
+  if(menu.style.display == "none"){
+    menu.style.display = "flex";
+  } else {
+    menu.style.display = "none";
+  }
+}
+
+menuButton.addEventListener('click', openMenu)
+exitButton.addEventListener('click', openMenu)

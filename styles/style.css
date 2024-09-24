@@ -81,8 +81,9 @@ nav {
 }
 
 .video-background video {
+	position: relative;
     width: 100vw;
-    height: 100%;
+    height: 30vh;
     object-fit: cover;
 }
 
@@ -91,7 +92,7 @@ nav ul {
     margin: 1.25rem;
     padding: 0;
     display: flex;
-	width: 100vw;
+	width: 80vw;
 }
 
 nav li {
@@ -101,6 +102,18 @@ nav li {
 
 nav li img {
 	width: 1.25em;
+}
+
+nav li select {
+	background-color: transparent;
+	border-radius: 0.2em;
+	border-color: white;
+	color: var(--color-background);
+}
+
+nav li button {
+	background-color: transparent;
+	border-style: none;
 }
 
 nav .logo {
@@ -135,13 +148,25 @@ select {
 /*********/
 /* MAIN */
 /********/
-.hamburgermenu {
+#hamburgermenu {
 	position: fixed;
-	display: grid;
+	display: none;
 	background-color: var(--color-background-footer);
 	height: 100vh;
 	width: 100vw;
 	z-index: 2;
+}
+
+#exitButton{
+	width: 15vw;
+	height: 6vh;
+	background-color: transparent;
+	border-style: none;
+}
+
+#exitButton img{
+	width: 10vw;
+	height: 4vh;
 }
 
 /*************/
@@ -150,7 +175,7 @@ select {
 main .menu {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	margin: 1em;
-	padding-top: 1em;
+	margin-top: 15vh;
 	border-radius: 1.5625em;
 }
 
@@ -168,8 +193,8 @@ main .vierkantmenu {
 	position: relative;
 	display: grid;
 	gap: 0.5em;
-	grid-template-rows: 2em 2em;
-	grid-template-columns: 6em 8em 8em;
+	grid-template-rows: 4vh 4vh;
+	grid-template-columns: 25vw 30vw 30vw;
 }
 
 main .vierkantmenu:nth-of-type(2) {
@@ -745,10 +770,12 @@ footer section address h2:first-child {
 	color: var(--color-background-2);
 }
 
-footer section address h2 {
+footer section address p {
+	font-family: "Marcellus";
 	font-size: 20px;
-	margin: 0.5em;
+	text-align: center;
 	color: var(--text-footer);
+	margin: 0;
 }
 
 
@@ -833,6 +860,10 @@ footer section:nth-of-type(5) a {
 	margin: 1.5rem;
 }
 
+.main2 h1 {
+	font-size: 1.7em;
+}
+
 .main2 h2 {
 	margin: 0;
 }
@@ -840,7 +871,7 @@ footer section:nth-of-type(5) a {
 main .zoeken {
 	display: flex;
 	flex-direction: row;
-	gap: 8.5rem;
+	gap: 4rem;
 }
 
 main .zoeken input {
