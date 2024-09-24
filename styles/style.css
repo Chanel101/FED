@@ -127,9 +127,11 @@ select {
 	margin: -1em;
     padding: 0.3em;
 }
-
+/***********/
+/*NAVOP&NEER*/
+/************/
 .headerup, .headerdown {
-	height: 10vh;
+	height: 6vh;
 	width: 100vw;
 	position: fixed;
 	z-index: 1;
@@ -144,10 +146,9 @@ select {
 	background-color: white;
 	top: 0;
 }
-
-/*********/
-/* MAIN */
-/********/
+/****************/
+/*HAMBURGERMENU*/
+/**************/
 #hamburgermenu {
 	position: fixed;
 	display: none;
@@ -155,11 +156,14 @@ select {
 	height: 100vh;
 	width: 100vw;
 	z-index: 2;
+	flex-direction: column;
+	margin: 0;
 }
 
 #exitButton{
-	width: 15vw;
-	height: 6vh;
+	width: 10vw;
+	height: 3vh;
+	margin: 1em;
 	background-color: transparent;
 	border-style: none;
 }
@@ -169,6 +173,74 @@ select {
 	height: 4vh;
 }
 
+#hamburgermenu section:nth-of-type(1) {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 80vw;
+	gap: 2em;
+	margin: 1em;
+	margin-bottom: 2rem;
+}
+
+#hamburgermenu section:nth-of-type(2) select{
+	width: 22em;
+	margin-left: 1em;
+}
+#hamburgermenu section:nth-of-type(3) {
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+}
+
+#hamburgermenu section:nth-of-type(3) summary {
+	width: 14.5em;
+	margin: 0;
+	padding: 0;
+}
+
+#hamburgermenu section:nth-of-type(4) {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+#hamburgermenu section:nth-of-type(4) article {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	row-gap: 2rem;
+	column-gap: 2rem;
+	padding: 1.6rem 3.2rem 1.6rem 3.2rem;
+	border-radius: 2.4rem;
+	height: 5em;
+	width: 80vw;
+}
+
+#hamburgermenu section:nth-of-type(5) {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1em;
+}
+
+#hamburgermenu section:nth-of-type(6) {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+#hamburgermenu section:nth-of-type(7) {
+	position: absolut;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/*********/
+/* MAIN */
+/********/
 /*************/
 /* SECTION 1 */
 /************/
@@ -677,21 +749,24 @@ footer h2 {
 /********************/
 details {
 	display: inline-block;
+	width: 100%;
 }
   
 summary {
 	list-style: none;
-	display: inline-flex;
+	display: flex;
 	align-items: center;
-	padding: 10px 15px;
+	justify-content: space-between;
+	padding: 0.6em 0.9em;
 	font-family: "Marcellus";
-	font-size: 20px;
+	font-size: 1.25em;
+	cursor: pointer;
 }
   
 summary::after {
 	content: '';
-	width: 18px;
-	height: 10px;
+	width: 1.1em;
+	height: 0.6em;
 	background: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg') no-repeat;
 	background-size: cover;
 	margin-left: 0.75em;
@@ -704,11 +779,11 @@ details[open] > summary::after {
 
 summary {
 	color: #30353b;
-	border-radius: 5px;
+	border-radius: 0.3em;
 }
 
 details {
-	border-radius: 5px;
+	border-radius: 0.3em;
 	margin: 1em;
 	margin-bottom: 0;
 }
@@ -717,6 +792,8 @@ details a {
 	text-decoration: none;
 	color: var(--text-footer);
 	text-transform: uppercase;
+	display: block;
+	margin: 0.3em 0;
 }
 
 /********************/
