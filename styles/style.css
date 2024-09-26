@@ -602,16 +602,18 @@ main .carousel ul li h2 {
 /*************/
 /* SECTION 7 */
 /************/
-main .carouselautomatisch ul {
+main .carouselautomatisch .scroller {
 	display: flex;
 	gap: 0.5em;
 	padding: 1em;
 	list-style: none;
-  	overflow-x: scroll;
   	scroll-snap-type: x mandatory;
+	overflow: hidden;
+	position: relative;
+	min-width: 200%;
 }
 
-main .carouselautomatisch ul li{
+main .carouselautomatisch .scroller li{
 	flex-shrink: 0;
   	width: 20em;
   	height: 30vh;
@@ -620,14 +622,14 @@ main .carouselautomatisch ul li{
 	position: relative;
 }
 
-main .carouselautomatisch ul li img {
+main .carouselautomatisch .scroller li img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	border-radius: 10%;
 }
 
-main .carouselautomatisch ul li h2 {
+main .carouselautomatisch .scroller li h2 {
 	position: absolute;
 	bottom: -0.5em;
 	left: -0.5em;
@@ -638,6 +640,19 @@ main .carouselautomatisch ul li h2 {
 	text-align: start;
 	z-index: 1;
 }
+
+main .scroller[data-animated="true"]{
+    display: flex;
+    width: fit-content;
+    animation: scroll 160s linear infinite;
+}
+
+@keyframes scroll {
+	to {
+		transform: translateX(-200%);
+	}
+}
+
 /*************/
 /* SECTION 8 */
 /************/
