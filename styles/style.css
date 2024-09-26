@@ -193,8 +193,11 @@ select {
 }
 
 #hamburgermenu section:nth-of-type(2) select{
-	width: 22em;
+	width: 24em;;
+	height: 5vh;
 	margin-left: 2em;
+	border: none;
+	border-radius: 1em 1em 1em 1em;
 }
 #hamburgermenu section:nth-of-type(3) {
 	margin-top: 1em;
@@ -265,8 +268,11 @@ select {
 	margin: 0;
 }
 
-#hamburgermenu section:nth-of-type(5) h2 {
-	
+#hamburgermenu h2 {
+	font-size: 1.5em;
+	align-self: center;
+	margin: 0;
+	margin-bottom: 1em;
 }
 
 #hamburgermenu section:nth-of-type(5) img {
@@ -295,6 +301,7 @@ select {
 #hamburgermenu section:nth-of-type(6) a img {
 	width: 13vw;
 	margin-left: 2em;
+	margin-bottom: 1em;
 }
 
 #hamburgermenu section:nth-of-type(6) img {
