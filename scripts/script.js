@@ -8,6 +8,21 @@ const scrollers = document.querySelectorAll(".scroller")
 let lastScrollTop = 0;
 let scrollFromTop;
 
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    scroller.setAttribute("data-animated", true);
+
+    const scrollerInner = scroller.querySelector('.scroller');
+    const scrollerContent = Array.from(scroller.children);
+
+    scrollerContent.forEach(item => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    })
+  });
+}
+
 
 function scrollHide() {
   scrollFromTop = document.documentElement.scrollTop;
@@ -34,24 +49,11 @@ function openMenu(){
   }
 }
 
-if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  addAnimation();
-}
-
-function addAnimation() {
-  scrollers.forEach((scroller) => {
-    scroller.setAttribute("data-animated", true);
-
-    const scrollerInner = scroller.querySelector('.scroller');
-    const scrollerContent = Array.from(scroller.children);
-
-    scrollerContent.forEach(item => {
-      const duplicatedItem = item.cloneNode(true);
-      duplicatedItem.setAttribute("aria-hidden", true);
-      scrollerInner.appendChild(duplicatedItem);
-    })
-  });
-}
+document.addEventListener("DOMContentLoaded", function() {
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    addAnimation();
+  }
+});
 
 menuButton.addEventListener('click', openMenu)
 exitButton.addEventListener('click', openMenu)

@@ -609,8 +609,7 @@ main .carouselautomatisch .scroller {
 	list-style: none;
   	scroll-snap-type: x mandatory;
 	overflow: hidden;
-	position: relative;
-	min-width: 200%;
+	width: 100vw;
 }
 
 main .carouselautomatisch .scroller li{
@@ -641,15 +640,19 @@ main .carouselautomatisch .scroller li h2 {
 	z-index: 1;
 }
 
-main .scroller[data-animated="true"]{
+main .carouselautomatisch[data-animated="true"] {
+	overflow: hidden;
+}
+
+main .scroller[data-animated="true"] {
     display: flex;
-    width: fit-content;
+	width: fit-content;
     animation: scroll 160s linear infinite;
 }
 
 @keyframes scroll {
 	to {
-		transform: translateX(-200%);
+		transform: translate(-100%);
 	}
 }
 
