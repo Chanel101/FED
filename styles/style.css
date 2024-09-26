@@ -131,7 +131,7 @@ select {
 /*NAVOP&NEER*/
 /************/
 .headerup, .headerdown {
-	height: 6vh;
+	height: 8vh;
 	width: 100vw;
 	position: fixed;
 	z-index: 1;
@@ -145,6 +145,10 @@ select {
 .headerdown {
 	background-color: white;
 	top: 0;
+}
+
+.headerdown select {
+	color: var(--color-text);
 }
 /****************/
 /*HAMBURGERMENU*/
