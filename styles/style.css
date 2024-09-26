@@ -892,38 +892,37 @@ details a {
 /* FOOTER SECTION 2 */
 /********************/
 footer section:nth-of-type(1) {
-	margin: 4em;
 	display: grid;
-	grid-template-columns: 2em 5em 2em 5em;
-	grid-template-rows: 5em 5em;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    width: 70vw;
+    margin: 0 auto;
 }
 
-footer section .families {
-	grid-column: 2;
-	grid-row: 1;
+footer section:nth-of-type(1) article {
+	display: grid;
+	grid-template-columns: 15vw 20vw;
+	grid-template-rows: 10vw 10vw;
+    font-family: Arial, sans-serif;
 }
 
-footer section .bedrijven {
-	grid-column: 4;
-	grid-row: 1;
+footer section:nth-of-type(1) article p {
+	font-size: 1em;
+	font-weight: 300;
 }
 
-footer section .groepen {
-	grid-column: 2;
-	grid-row: 2;
-}
-
-footer section .scholen {
-	grid-column: 4;
-	grid-row: 2;
-}
-
-footer section:nth-of-type(1) h2 {
-	font-size: 10px;
+footer section:nth-of-type(1) article h2 {
+	font-size: 1.2em;
+    font-weight: 500;
+    margin-top: 0;
+	margin-left: 1.5em;
 }
 
 footer section:nth-of-type(1) img {
 	width: 2em;
+	height: auto;
+	margin-bottom: 1em;
+	margin-top: 1.3em;
 }
 
 /********************/
