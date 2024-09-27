@@ -12,9 +12,9 @@ function addAnimation() {
   scrollers.forEach((scroller) => {
     scroller.setAttribute("data-animated", true);
 
-    const scrollerInner = scroller.querySelector('.scroller');
-    const scrollerContent = Array.from(scroller.children);
-
+    const scrollerInner = scroller.querySelector(".scroller");
+    const scrollerContent = Array.from(scrollerInner.children);
+  
     scrollerContent.forEach(item => {
       const duplicatedItem = item.cloneNode(true);
       duplicatedItem.setAttribute("aria-hidden", true);

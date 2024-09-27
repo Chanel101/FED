@@ -185,7 +185,7 @@ Ingmar's website (Hema)
 
   - css clip-path maker voor hamburgermenu vanuit een hoek.
   - main een class geven zo om makkelijk te stylen voor de tweede pagina.
-  - 
+  - een tutorial gekregen om mijn carousel automatisch te maken van David.
   - 
 
 </details>
@@ -202,6 +202,8 @@ Ingmar's website (Hema)
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  
+
 </details>
 
 
@@ -214,7 +216,16 @@ Ingmar's website (Hema)
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  1. Bij de footer is er een vierkant waar je op 4 verschillende links kan klikken. Het lukt me niet met grid om de pijl en de tekst op de juiste plaats te zetten.
+  <img src="/readme-images/footer_vierkant.png" alt="klikbare elementen in een vierkant">
+  2. De automatische carousel gaat automatisch maar de list items willen niet dupliceren en zo in loop afspelen en ook de carousel neemt meer dan de grootte van het scherm in.
+   <img src="/readme-images/automatische_carousel.png" alt="carousel die in loop blijft doorspelen">
+  3. ik heb ook nog een inschrijvingsformulier die ik moet maken die ik bijna vergeten was.
+  4. de tweede pagina moet ik nog de nav in de footer aanpassen en het winkelmandje een animatie geven wanneer iets toevoegd aan je winkelmandje.
+  5. light en dark mode moet ik nog toevoegen.
+  6. Ik ga ook nog aan de video toevoegen dat er kan gekozen worden om de video te pauzeren.
+  7. de reduced motion wil ik ook nog toevoegen aan mijn website.
+  8. Als laatste heb ik nog de eerste carousel die bolletjes moet hebben eronder om te kunnen klikken naar een afbeelding in de carousel.
 
 
   ### Agenda voor meeting
@@ -230,10 +241,10 @@ Ingmar's website (Hema)
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - carousel met bolletjes zijn er daar goeie tutorials voor?
+  - de automatische carousel is er iets dat niet klopt waardoor het niet werkt?
+  - de tweede pagina mag die wat simpeler zijn?
+  - 
 
 </details>
 
@@ -282,5 +293,6 @@ Ingmar's website (Hema)
   5. Voor de gradient op de tijger foto heb ik hulp gekregen van de sutdentenassistent. https://codepen.io/Dave-deo/pen/rNEEEWr?editors=1100 
   6. Voor het stylen van de details en summary in de footer heb ik deze code gebruikt. https://www.sitepoint.com/style-html-details-element/ 
   7.  Hamburgermenu laten verschijnen en verdwijnen via javascript. https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
+  8. https://youtu.be/iLmBy-HKIAw?si=-56qVNNYvvBA1AkZ deze tutorial heb ik gevolgd voor de automatische carousel.
 
 </details>

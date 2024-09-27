@@ -642,6 +642,7 @@ main .carouselautomatisch .scroller li h2 {
 
 main .carouselautomatisch[data-animated="true"] {
 	overflow: hidden;
+	width: fit-content;
 }
 
 main .scroller[data-animated="true"] {
@@ -989,7 +990,7 @@ footer button {
 	font-size: inherit;
 	outline: none;
 	padding: 1em;
-	width: 2rem;
+	width: 8rem;
 	border-radius: 2em;
 	border-color: var(--color-highlight);
 }
