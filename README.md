@@ -202,11 +202,17 @@ Ingmar's website (Hema)
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
-  
+  ik heb alles ingevuld in de pdf met bevindingen.
+  <img src="readme-images/FED 24-25 - Blok 1 - WCAG checklist_ChanelVercaemst _eigenwebsite_Pagina_1.png" alt="WCAG pagina 1">
 
+  <img src="readme-images/FED 24-25 - Blok 1 - WCAG checklist_ChanelVercaemst _eigenwebsite_Pagina_2.png" alt="WCAG pagina 2">
+
+  <img src="readme-images/FED 24-25 - Blok 1 - WCAG checklist_ChanelVercaemst _eigenwebsite_Pagina_3.png" alt="WCAG pagina 3">
+
+  <img src="readme-images/FED 24-25 - Blok 1 - WCAG checklist_ChanelVercaemst _eigenwebsite_Pagina_4.png" alt="WCAG pagina 4">
+
+  <img src="readme-images/FED 24-25 - Blok 1 - WCAG checklist_ChanelVercaemst _eigenwebsite_Pagina_5.png" alt="WCAG pagina 5">
 </details>
-
-
 
 
 
