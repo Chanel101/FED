@@ -247,9 +247,8 @@ Ingmar's website (Hema)
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - carousel met bolletjes zijn er daar goeie tutorials voor?
-  - de automatische carousel is er iets dat niet klopt waardoor het niet werkt?
-  - de tweede pagina mag die wat simpeler zijn?
+  - animatie afmaken dus bv. als er iets in het winkelmandje komt dat de button iets doet zoals met :focus, ...
+  - focus op 
   - 
 
 </details>

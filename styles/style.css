@@ -602,6 +602,10 @@ main .carousel ul li h2 {
 /*************/
 /* SECTION 7 */
 /************/
+main .carouselautomatisch{
+	overflow: hidden;
+}
+
 main .carouselautomatisch .scroller {
 	display: flex;
 	gap: 0.5em;
@@ -641,13 +645,13 @@ main .carouselautomatisch .scroller li h2 {
 }
 
 main .carouselautomatisch[data-animated="true"] {
-	overflow: hidden;
 	width: fit-content;
 }
 
 main .scroller[data-animated="true"] {
     display: flex;
-	width: fit-content;
+	width: max-content;
+	flex-wrap: wrap;
     animation: scroll 160s linear infinite;
 }
 
