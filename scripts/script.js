@@ -74,3 +74,4 @@ document.addEventListener("DOMContentLoaded", function() {
 menuButton.addEventListener('click', openMenu)
 exitButton.addEventListener('click', openMenu)
 closeButton.addEventListener('click', openInschrijving)
+formulierButton.addEventListener('click',openInschrijving)

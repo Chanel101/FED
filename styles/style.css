@@ -1026,14 +1026,13 @@ footer .inschrijven button {
 
 footer .inschrijvingsformulier {
 	position: fixed;
-	display: none;
-	background-color: var(--color-background-footer);
-	height: 100vh;
-	width: 100vw;
-	z-index: 2;
-	flex-direction: column;
-	padding: 0;
-	overflow-y: scroll;
+    display: none;
+    background-color: var(--color-background-footer);
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    flex-direction: column;
+    padding: 0;
 }
 
 #closeButton{
