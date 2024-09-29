@@ -6,6 +6,9 @@ const menuButton = document.querySelector('#menuButton')
 const exitButton = document.querySelector('#exitButton')
 const menu = document.getElementById('hamburgermenu')
 const scrollers = document.querySelectorAll(".scroller")
+const closeButton = document.querySelector('#closeButton')
+const formulier = document.getElementById('inschrijvingsformulier')
+
 let video = document.querySelector('video');
 video.play();
 
@@ -50,6 +53,14 @@ function openMenu(){
     menu.style.display = "flex";
   } else {
     menu.style.display = "none";
+  }
+}
+
+function openInschrijving(){
+  if(formulier.style.display == "none"){
+    formulier.style.display = "flex";
+  } else {
+    formulier.style.display = "none";
   }
 }
 
