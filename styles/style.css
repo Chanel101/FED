@@ -1059,12 +1059,20 @@ footer section:nth-of-type(5) p {
 }
 
 .main2 h1 {
-	font-size: 1.7em;
+	font-size: 1.5em;
 }
 
 .main2 h2 {
 	margin: 0;
+	font-size: 1.3em;
 }
+/************/
+/* NAV PAGINA2 */
+/************/
+.pagina2 nav select {
+	color: var(--color-text);
+}
+
 
 main .zoeken {
 	display: flex;
@@ -1073,8 +1081,8 @@ main .zoeken {
 }
 
 main .zoeken input {
-	width: 20vw;
-	height: 5vh;
+	width: 30vw;
+	height: 4vh;
 	align-self: center;
 }
 
@@ -1129,24 +1137,96 @@ table h2 {
 /***********/
 /*SECTION4*/
 /**********/
+section:nth-of-type(4) h2 {
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+
+fieldset {
+	border: thin var(--color-background-footer) solid;
+	width: 90vw;
+}
 
 /***********/
 /*SECTION5*/
 /**********/
+.main2 table {
+	width: 90vw;
+}
+
+.main2 table tr td h2 {
+	font-size: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.main2 table tr td a img {
+	width: 7vw;
+}
+
+.main2 table tr td input {
+	width: 10vw;
+}
+
+
+
 
 
 /***********/
 /*SECTION6*/
 /**********/
-.info ul {
+.main2 .info {
+	width: 90vw;
+}
+
+.main2 .info ul li address {
+	font-size: 0.5em;
+	text-align: center;
+	margin: 0;
+	color: var(--text-footer);
+}
+
+.main2 .info ul li {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+
+	text-align: center;
 }
 
-.info li a {
+.main2 .info ul li a {
 	text-decoration: none;
 	color: var(--text-footer);
 	font-size: 0.5em;
+}
+
+/*****************/
+/*FOOTER PAGINA2*/
+/***************/
+.footer2 {
+	position: sticky;
+	background: var(--color-background);
+	height: 10vh;
+	bottom: 0;
+}
+
+.footer2 ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin-right: 1em;
+}
+
+.footer2 ul li {
+	margin: 1em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.footer2 ul li a {
+	text-decoration: none;
+	border-radius: 5em;
+	padding: 1em;
+	background: var(--color-highlight);
+	color: var(--color-background);
 }
