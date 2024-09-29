@@ -10,8 +10,7 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
-	--color-text:#262626;
+	--color-text: #262626;
 	--color-background-block: white;
 	--color-background:#f2f2f2;
 	--color-highlight: #dc9d23;
@@ -20,6 +19,13 @@
 	--color-background-2: #000000;
 	--bakcground-footer: #F2F2F2;
 }
+/*html:has([value="light"]:checked) {
+
+}
+
+html:has([value="dark"]:checked) {
+	
+}*/
 
 /****************/
 /* JOUW STYLING */
@@ -842,6 +848,11 @@ footer h2 {
 	align-items: center;
 }
 
+footer label {
+	margin-left: 1em;
+
+}
+
 /********************/
 /* FOOTER SECTION 1 */
 /********************/
@@ -1056,6 +1067,7 @@ footer section:nth-of-type(5) p {
 
 .main2 {
 	margin: 1.5rem;
+	margin-top: 2em;
 }
 
 .main2 h1 {
@@ -1073,7 +1085,26 @@ footer section:nth-of-type(5) p {
 	color: var(--color-text);
 }
 
+.pagina2 ul:nth-child(2) {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	border-bottom: thin var(--text-footer) solid;
+	margin: 0;
+	padding: 0;
+}
 
+.pagina2 ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--color-text);
+	font-size: 1em;
+	justify-content: space-evenly;
+}
+/************/
+/*TITEL + ZOEKEN PAGINA2 */
+/************/
 main .zoeken {
 	display: flex;
 	flex-direction: row;
@@ -1086,32 +1117,12 @@ main .zoeken input {
 	align-self: center;
 }
 
-
-/*******/
-/*TABLE*/
-/*******/
-
-table img {
-	width: 3em;
-	margin-right: 1em;
-}
-
-table {
-	margin-top: 2em;
-	width: 100vw;
-}
-
-table h2 {
-	font-size: 1em;
-}
-
 /***********/
 /*SECTION1*/
 /**********/
 .dagticket h2, .membershipcard h2 {
 	color: var(--color-highlight);
 }
-
 
 .dagticket p:first-of-type {
 	font-weight: bolder;
@@ -1120,11 +1131,9 @@ table h2 {
 .dagticket p:nth-of-type(2) {
 	font-weight: bolder;
 }
-
 /***********/
 /*SECTION2*/
 /**********/
-
 .membershipcard p:first-of-type {
 	font-weight: bolder;
 }
@@ -1146,10 +1155,22 @@ fieldset {
 	border: thin var(--color-background-footer) solid;
 	width: 90vw;
 }
-
 /***********/
-/*SECTION5*/
+/*TABLE + SECTION5*/
 /**********/
+table img {
+	width: 3em;
+	margin-right: 1em;
+}
+
+table {
+	margin-top: 2em;
+	width: 100vw;
+}
+
+table h2 {
+	font-size: 1em;
+}
 .main2 table {
 	width: 90vw;
 }
@@ -1166,10 +1187,6 @@ fieldset {
 .main2 table tr td input {
 	width: 10vw;
 }
-
-
-
-
 
 /***********/
 /*SECTION6*/

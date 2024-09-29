@@ -1,9 +1,13 @@
 // JavaScript Document
+console.log('Hello console!');
+
 const header = document.querySelector('#firstHeader')
 const menuButton = document.querySelector('#menuButton')
 const exitButton = document.querySelector('#exitButton')
 const menu = document.getElementById('hamburgermenu')
 const scrollers = document.querySelectorAll(".scroller")
+let video = document.querySelector('video');
+video.play();
 
 let lastScrollTop = 0;
 let scrollFromTop;
