@@ -6,6 +6,7 @@ const menuButton = document.querySelector('#menuButton')
 const exitButton = document.querySelector('#exitButton')
 const menu = document.getElementById('hamburgermenu')
 const scrollers = document.querySelectorAll(".scroller")
+const formulierButton = document.querySelector('#inschrijfButton')
 const closeButton = document.querySelector('#closeButton')
 const formulier = document.getElementById('inschrijvingsformulier')
 
@@ -72,3 +73,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
 menuButton.addEventListener('click', openMenu)
 exitButton.addEventListener('click', openMenu)
+closeButton.addEventListener('click', openInschrijving)
