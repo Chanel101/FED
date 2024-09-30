@@ -10,6 +10,8 @@ const formulierButton = document.getElementById('inschrijfButton');
 const closeButton = document.querySelector('#closeButton');
 const formulier = document.getElementById('inschrijvingsformulier');
 
+const verbergButton = document.getElementById('verbergButton')
+
 
 let video = document.querySelector('video');
 video.play();
@@ -71,6 +73,10 @@ document.addEventListener("DOMContentLoaded", function() {
     addAnimation();
   }
 });
+
+function verbergOpties() {
+  
+}
 
 menuButton.addEventListener('click', openMenu)
 exitButton.addEventListener('click', openMenu)

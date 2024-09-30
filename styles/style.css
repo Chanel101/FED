@@ -10,34 +10,52 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	color-scheme: light dark;
-
-	--color-text: light-dark(#262626,white);
-	--color-background-block: light-dark(white,#262626);
-	--color-background:light-dark(#f2f2f2, #262626);
-	--color-highlight: light-dark(#dc9d23,darkorange);
-	--text-footer:light-dark(#808080, white);
-	--color-background-footer:light-dark(#d9d9d9, black);
-	--color-background-2:light-dark (#000000, white);
-	--bakcground-footer: light-dark(#F2F2F2,black);
-}
-root:has([value="light"]:checked) {
-	color-scheme:light;
-}
-
-root:has([value="dark"]:checked) {
-	color-scheme:dark;
-}
-
-html {
 	--color-text: #262626;
 	--color-background-block: white;
-	--color-background:#f2f2f2;
+	--color-background: #f2f2f2;
 	--color-highlight: #dc9d23;
-	--text-footer:#808080;
-	--color-background-footer:#d9d9d9;
+	--text-footer: #808080;
+	--color-background-footer: #d9d9d9;
 	--color-background-2: #000000;
 	--bakcground-footer: #F2F2F2;
+}
+
+
+:root {
+    color-scheme: light dark;
+
+    --color-text: #262626; /* Of gebruik een andere kleur voor dark mode */
+    --color-background-block: white; /* Pas aan voor dark mode */
+    --color-background: #f2f2f2; /* Pas aan voor dark mode */
+    --color-highlight: #dc9d23; /* Pas aan voor dark mode */
+    --text-footer: #808080; /* Pas aan voor dark mode */
+    --color-background-footer: #d9d9d9; /* Pas aan voor dark mode */
+    --color-background-2: #000000; /* Pas aan voor dark mode */
+    --background-footer: #F2F2F2; /* Pas aan voor dark mode */
+}
+
+:root:has([value="light"]:checked) {
+    color-scheme: light;
+    --color-text: #262626;
+    --color-background-block: white;
+    --color-background: #f2f2f2;
+    --color-highlight: #dc9d23;
+    --text-footer: #808080;
+    --color-background-footer: #d9d9d9;
+    --color-background-2: #000000;
+    --background-footer: #F2F2F2;
+}
+
+:root:has([value="dark"]:checked) {
+    color-scheme: dark;
+    --color-text: white;
+    --color-background-block: black;
+    --color-background: black;
+    --color-highlight: darkorange;
+    --text-footer: black;
+    --color-background-footer: darkgrey;
+    --color-background-2: white;
+    --background-footer: black;
 }
 /****************/
 /* JOUW STYLING */
@@ -52,6 +70,18 @@ html {
 body {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 	margin: 0;
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0%;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 h1 {
@@ -686,7 +716,7 @@ main .scroller[data-animated="true"] {
 main .cijfersdonker {
 	display: grid;
 	gap: 5rem;
-	background-color: var(--color-text);
+	background-color: #262626;
 }
 
 main .cijfersdonker article {
@@ -706,7 +736,7 @@ main .cijfersdonker article:last-child {
 main .cijfersdonker h2 {
 	text-align: center;
 	font-size: 2.236rem;
-	color: var(--color-background);
+	color: white;
 }
 
 main .cijfersdonker article h2 {
@@ -716,7 +746,7 @@ main .cijfersdonker article h2 {
 }
 
 main .cijfersdonker p {
-	color: var(--color-background);
+	color: white;
 	font-size: 0.813rem;
 }
 
@@ -898,6 +928,11 @@ footer label {
 footer article:nth-of-type(1) {
 	margin-bottom: 1em;
 }
+details {
+	display: inline-block;
+	width: 90%;
+	border-bottom: thin var(--text-footer) solid;
+}
   
 summary {
 	list-style: none;
@@ -918,7 +953,6 @@ summary::after {
 	background-size: cover;
 	margin-left: 0.75em;
 	transition: 0.2s;
-	color: var(--color-text);
 }
   
 details[open] > summary::after {
@@ -926,15 +960,11 @@ details[open] > summary::after {
 }
 
 summary {
-	color: var(--color-text);
+	color: #30353b;
 	border-radius: 0.3em;
 }
 
 details {
-	display: inline-block;
-	width: 90%;
-	border-bottom: thin var(--text-footer) solid;
-	color: var(--color-background);
 	border-radius: 0.3em;
 	margin: 1em;
 	margin-bottom: 0;
