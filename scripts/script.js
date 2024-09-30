@@ -9,6 +9,9 @@ const scrollers = document.querySelectorAll(".scroller");
 const video = document.querySelector('video');
 const playButton = document.getElementById("playButton");
 const pauseButton = document.getElementById("pauseButton");
+const closeButton = document.querySelector('#closeButton');
+const formButton = document.querySelector('#inschrijfButton');
+const formulier = document.querySelector('#inschrijvingsformulier');
 
 let lastScrollTop = 0;
 let scrollFromTop;
@@ -68,12 +71,23 @@ function addAnimation() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+/*INSCHRIJVINGSFORMULIER*/
+function openFormulier() {
+  if (formulier.style.display == "none") {
+    formulier.style.display = "flex";
+  } else {
+    formulier.style.display = "none";
+  }
+}
+
+/*document.addEventListener("DOMContentLoaded", function () {
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     addAnimation();
   }
-});
+});*/
 
 
 menuButton.addEventListener('click', openMenu);
 exitButton.addEventListener('click', openMenu);
+formButton.addEventListener('click', openFormulier);
+closeButton.addEventListener('click',openFormulier);
