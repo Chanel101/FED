@@ -9,64 +9,21 @@ const scrollers = document.querySelectorAll(".scroller");
 const video = document.querySelector('video');
 const playButton = document.getElementById("playButton");
 const pauseButton = document.getElementById("pauseButton");
-const verbergButton = document.getElementById("verbergButton");
-const fieldset = document.getElementById("artikelOpties");
-const quantityInputs = document.querySelectorAll('input[type="number"]');
-const totalPriceElement = document.getElementById('totaalPrijs');
 
 let lastScrollTop = 0;
 let scrollFromTop;
-let state_fieldset = true;
 
-function verbergen_openen() {
-  if (state_fieldset == true) {
-    fieldset.style.display = 'none';
-    state_fieldset = false;
-    verbergButton.textContent = 'laten zien';
+
+/*HAMBURGERMENU*/
+function openMenu() {
+  if (menu.style.display == "none") {
+    menu.style.display = "flex";
   } else {
-    fieldset.style.display = '';
-    state_fieldset = true;
-    verbergButton.textContent = 'verbergen';
+    menu.style.display = "none";
   }
 }
-verbergButton.addEventListener('click', verbergen_openen);
 
-function updateTotalPrice() {
-  let total = 0;
-
-  quantityInputs.forEach(input => {
-    const quantity = parseInt(input.value);
-    const price = parseFloat(input.getAttribute('data-price'));
-    total += quantity * price;
-  });
-
-  // Update the total price in the HTML
-  totalPriceElement.textContent = `€ ${total.toFixed(2)}`;
-}
-
-// Attach event listener to each quantity input
-quantityInputs.forEach(input => {
-  input.addEventListener('input', updateTotalPrice);
-});
-
-// Initial calculation on page load
-updateTotalPrice();
-
-function addAnimation() {
-  scrollers.forEach((scroller) => {
-    scroller.setAttribute("data-animated", true);
-
-    const scrollerInner = document.querySelector(".scroller");
-    const scrollerContent = Array.from(scrollerInner.children);
-
-    scrollerContent.forEach((item) => {
-      const duplicatedItem = item.cloneNode(true);
-      duplicatedItem.setAttribute("aria-hidden", true);
-      scrollerInner.appendChild(duplicatedItem);
-    });
-  });
-}
-
+/*NAV BALK DIE TERUGKEERT*/
 function scrollHide() {
   scrollFromTop = document.documentElement.scrollTop;
   if (scrollFromTop > lastScrollTop) {
@@ -86,30 +43,37 @@ window.onscroll = function () {
   scrollHide(); 
 };
 
-function openMenu() {
-  if (menu.style.display == "none") {
-    menu.style.display = "flex";
-  } else {
-    menu.style.display = "none";
-  }
-}
-
-function playVideo() {
+/*VIDEO PAUZE EN PLAY*/
+playButton.addEventListener("click", function() {
   video.play();
-}
+});
 
-function pauseVideo() {
+pauseButton.addEventListener("click", function() {
   video.pause();
+}); 
+
+/*AUTOMATISCHE CAROUSEL*/
+function addAnimation() {
+  scrollers.forEach((scroller) => {
+    scroller.setAttribute("data-animated", true);
+
+    const scrollerInner = document.querySelector(".scroller");
+    const scrollerContent = Array.from(scrollerInner.children);
+
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      duplicatedItem.setAttribute("aria-hidden", true);
+      scrollerInner.appendChild(duplicatedItem);
+    });
+  });
 }
 
-/*document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     addAnimation();
   }
-});*/
+});
 
 
 menuButton.addEventListener('click', openMenu);
 exitButton.addEventListener('click', openMenu);
-playButton.addEventListener("click", playVideo);
-pauseButton.addEventListener("click", pauseVideo);
