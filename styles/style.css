@@ -136,10 +136,6 @@ nav {
     object-fit: cover;
 }
 
-#playButton {
-	margin-left: 1em;
-}
-
 #playButton, #pauseButton {
 	background-color: #dc9d23;
 	border-radius: 50%;
