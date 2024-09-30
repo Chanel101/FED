@@ -299,5 +299,5 @@ Ingmar's website (Hema)
   6. Voor het stylen van de details en summary in de footer heb ik deze code gebruikt. https://www.sitepoint.com/style-html-details-element/ 
   7.  Hamburgermenu laten verschijnen en verdwijnen via javascript. https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
   8. https://youtu.be/iLmBy-HKIAw?si=-56qVNNYvvBA1AkZ deze tutorial heb ik gevolgd voor de automatische carousel.
-
+  9. voor de play en pauze button voor de video heb ik deze website gebruikt om me daarbij te helpen. https://www.geeksforgeeks.org/how-to-play-pause-video-using-jquery/
 </details>

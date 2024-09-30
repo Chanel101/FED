@@ -136,6 +136,16 @@ nav {
     object-fit: cover;
 }
 
+#playButton {
+	margin-left: 1em;
+}
+
+#playButton, #pauseButton {
+	background-color: #dc9d23;
+	border-radius: 50%;
+	padding: 0.5em;
+}
+
 nav ul {
     list-style: none;
     margin: 1.25rem;

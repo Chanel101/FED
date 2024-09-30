@@ -9,12 +9,10 @@ const scrollers = document.querySelectorAll(".scroller")
 const formulierButton = document.getElementById('inschrijfButton');
 const closeButton = document.querySelector('#closeButton');
 const formulier = document.getElementById('inschrijvingsformulier');
-
+const video = document.querySelector('video');
+const playButton = document.getElementById("playButton");
+const pauseButton = document.getElementById("pauseButton");
 const verbergButton = document.getElementById('verbergButton')
-
-
-let video = document.querySelector('video');
-video.play();
 
 let lastScrollTop = 0;
 let scrollFromTop;
@@ -33,6 +31,14 @@ function addAnimation() {
     })
   });
 }
+
+playButton.addEventListener("click", function() {
+  video.play();
+});
+
+pauseButton.addEventListener("click", function() {
+  video.pause();
+});
 
 
 function scrollHide() {
