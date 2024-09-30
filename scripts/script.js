@@ -12,10 +12,35 @@ const formulier = document.getElementById('inschrijvingsformulier');
 const video = document.querySelector('video');
 const playButton = document.getElementById("playButton");
 const pauseButton = document.getElementById("pauseButton");
-const verbergButton = document.getElementById('verbergButton')
 
 let lastScrollTop = 0;
 let scrollFromTop;
+
+document.addEventListener('DOMContentLoaded', function() {
+  const quantityInputs = document.querySelectorAll('input[type="number"]');
+  const totalPriceElement = document.getElementById('totaalPrijs');
+
+  function updateTotalPrice() {
+      let total = 0;
+
+      quantityInputs.forEach(input => {
+          const quantity = parseInt(input.value);
+          const price = parseFloat(input.getAttribute('data-price'));
+          total += quantity * price;
+      });
+
+      // Update the total price in the HTML
+      totalPriceElement.textContent = `€ ${total.toFixed(2)}`;
+  }
+
+  // Attach event listener to each quantity input
+  quantityInputs.forEach(input => {
+      input.addEventListener('input', updateTotalPrice);
+  });
+
+  // Initial calculation on page load
+  updateTotalPrice();
+});
 
 function addAnimation() {
   scrollers.forEach((scroller) => {
@@ -80,9 +105,6 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 });
 
-function verbergOpties() {
-  
-}
 
 menuButton.addEventListener('click', openMenu)
 exitButton.addEventListener('click', openMenu)

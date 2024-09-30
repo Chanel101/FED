@@ -1178,7 +1178,7 @@ footer section:nth-of-type(5) p {
 .pagina2 ul li a {
 	text-decoration: none;
 	text-transform: uppercase;
-	color: var(--color-text);
+	color: var(--color-highlight);
 	font-size: 1em;
 	justify-content: space-evenly;
 }
@@ -1310,8 +1310,8 @@ table h2 {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
 	margin-right: 1em;
+	color: var(--color-text);
 }
 
 .footer2 ul li {
@@ -1325,5 +1325,5 @@ table h2 {
 	border-radius: 5em;
 	padding: 1em;
 	background: var(--color-highlight);
-	color: var(--color-background);
+	color: var(--color-text);
 }
