@@ -99,6 +99,7 @@ function openInschrijving() {
   }
 }
 
+
 document.addEventListener("DOMContentLoaded", function() {
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     addAnimation();
