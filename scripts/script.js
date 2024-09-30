@@ -6,9 +6,10 @@ const menuButton = document.querySelector('#menuButton')
 const exitButton = document.querySelector('#exitButton')
 const menu = document.getElementById('hamburgermenu')
 const scrollers = document.querySelectorAll(".scroller")
-const formulierButton = document.querySelector('#inschrijfButton')
-const closeButton = document.querySelector('#closeButton')
-const formulier = document.getElementById('inschrijvingsformulier')
+const formulierButton = document.getElementById('inschrijfButton');
+const closeButton = document.querySelector('#closeButton');
+const formulier = document.getElementById('inschrijvingsformulier');
+
 
 let video = document.querySelector('video');
 video.play();
@@ -57,8 +58,8 @@ function openMenu(){
   }
 }
 
-function openInschrijving(){
-  if(formulier.style.display == "none"){
+function openInschrijving() {
+  if (formulier.style.display === "none" || formulier.style.display === "") {
     formulier.style.display = "flex";
   } else {
     formulier.style.display = "none";
@@ -73,5 +74,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
 menuButton.addEventListener('click', openMenu)
 exitButton.addEventListener('click', openMenu)
-closeButton.addEventListener('click', openInschrijving)
-formulierButton.addEventListener('click',openInschrijving)
+formulierButton.addEventListener('click', openInschrijving);
+closeButton.addEventListener('click', openInschrijving);
