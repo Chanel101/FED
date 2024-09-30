@@ -1,46 +1,56 @@
 // JavaScript Document
 console.log('Hello console!');
 
-const header = document.querySelector('#firstHeader')
-const menuButton = document.querySelector('#menuButton')
-const exitButton = document.querySelector('#exitButton')
-const menu = document.getElementById('hamburgermenu')
-const scrollers = document.querySelectorAll(".scroller")
-const formulierButton = document.getElementById('inschrijfButton');
-const closeButton = document.querySelector('#closeButton');
-const formulier = document.getElementById('inschrijvingsformulier');
+const header = document.querySelector('#firstHeader');
+const menuButton = document.querySelector('#menuButton');
+const exitButton = document.querySelector('#exitButton');
+const menu = document.getElementById('hamburgermenu');
+const scrollers = document.querySelectorAll(".scroller");
 const video = document.querySelector('video');
 const playButton = document.getElementById("playButton");
 const pauseButton = document.getElementById("pauseButton");
+const verbergButton = document.getElementById("verbergButton");
+const fieldset = document.getElementById("artikelOpties");
+const quantityInputs = document.querySelectorAll('input[type="number"]');
+const totalPriceElement = document.getElementById('totaalPrijs');
 
 let lastScrollTop = 0;
 let scrollFromTop;
+let state_fieldset = true;
 
-document.addEventListener('DOMContentLoaded', function() {
-  const quantityInputs = document.querySelectorAll('input[type="number"]');
-  const totalPriceElement = document.getElementById('totaalPrijs');
-
-  function updateTotalPrice() {
-      let total = 0;
-
-      quantityInputs.forEach(input => {
-          const quantity = parseInt(input.value);
-          const price = parseFloat(input.getAttribute('data-price'));
-          total += quantity * price;
-      });
-
-      // Update the total price in the HTML
-      totalPriceElement.textContent = `€ ${total.toFixed(2)}`;
+function verbergen_openen() {
+  if (state_fieldset == true) {
+    fieldset.style.display = 'none';
+    state_fieldset = false;
+    verbergButton.textContent = 'laten zien';
+  } else {
+    fieldset.style.display = '';
+    state_fieldset = true;
+    verbergButton.textContent = 'verbergen';
   }
+}
+verbergButton.addEventListener('click', verbergen_openen);
 
-  // Attach event listener to each quantity input
+function updateTotalPrice() {
+  let total = 0;
+
   quantityInputs.forEach(input => {
-      input.addEventListener('input', updateTotalPrice);
+    const quantity = parseInt(input.value);
+    const price = parseFloat(input.getAttribute('data-price'));
+    total += quantity * price;
   });
 
-  // Initial calculation on page load
-  updateTotalPrice();
+  // Update the total price in the HTML
+  totalPriceElement.textContent = `€ ${total.toFixed(2)}`;
+}
+
+// Attach event listener to each quantity input
+quantityInputs.forEach(input => {
+  input.addEventListener('input', updateTotalPrice);
 });
+
+// Initial calculation on page load
+updateTotalPrice();
 
 function addAnimation() {
   scrollers.forEach((scroller) => {
@@ -48,30 +58,21 @@ function addAnimation() {
 
     const scrollerInner = document.querySelector(".scroller");
     const scrollerContent = Array.from(scrollerInner.children);
-  
+
     scrollerContent.forEach((item) => {
       const duplicatedItem = item.cloneNode(true);
       duplicatedItem.setAttribute("aria-hidden", true);
       scrollerInner.appendChild(duplicatedItem);
-    })
+    });
   });
 }
-
-playButton.addEventListener("click", function() {
-  video.play();
-});
-
-pauseButton.addEventListener("click", function() {
-  video.pause();
-});
-
 
 function scrollHide() {
   scrollFromTop = document.documentElement.scrollTop;
   if (scrollFromTop > lastScrollTop) {
     header.classList.remove("headerdown");
     header.classList.add('headerup');
-  } else if(scrollFromTop < 50){
+  } else if (scrollFromTop < 50) {
     header.classList.remove("headerdown");
     header.classList.add('headerup');
   }
@@ -81,33 +82,34 @@ function scrollHide() {
   }
   lastScrollTop = scrollFromTop <= 0 ? 0 : scrollFromTop;
 }
-window.onscroll = function(){scrollHide()};
+window.onscroll = function () {
+  scrollHide(); 
+};
 
-function openMenu(){
-  if(menu.style.display == "none"){
+function openMenu() {
+  if (menu.style.display == "none") {
     menu.style.display = "flex";
   } else {
     menu.style.display = "none";
   }
 }
 
-function openInschrijving() {
-  if (formulier.style.display === "none" || formulier.style.display === "") {
-    formulier.style.display = "flex";
-  } else {
-    formulier.style.display = "none";
-  }
+function playVideo() {
+  video.play();
 }
 
+function pauseVideo() {
+  video.pause();
+}
 
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function () {
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     addAnimation();
   }
-});
+});*/
 
 
-menuButton.addEventListener('click', openMenu)
-exitButton.addEventListener('click', openMenu)
-formulierButton.addEventListener('click', openInschrijving);
-closeButton.addEventListener('click', openInschrijving);
+menuButton.addEventListener('click', openMenu);
+exitButton.addEventListener('click', openMenu);
+playButton.addEventListener("click", playVideo);
+pauseButton.addEventListener("click", pauseVideo);

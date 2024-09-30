@@ -10,7 +10,6 @@
 	
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-	<script src="scripts/script.js" defer></script>
 </head>
 
 <body>
@@ -65,30 +64,30 @@
 		<!--section4-->
 		<section>
 			<h2>Zoek- en filteropties</h2>
-			<fieldset>
-				<legend>Artikelgroep</legend>
-				<p>Alles selecteren</p>
-				<p>Alles deselecteren</p>
-				<article>
-					<input type="checkbox">
-					<label>Bon cadeau carte de membre</label>
-				</article>
-				<article>
-					<input type="checkbox">
-					<label>Bon cadeau animal adventure</label>
-				</article>
-				<article>
-					<input type="checkbox">
-					<label>Donations</label>
-				</article>
-				<article>
-					<input type="checkbox">
-					<label>Ticket cadeau</label>
-				</article>
+			<fieldset id="artikelOpties">
+			  <legend>Artikelgroep</legend>
+			  <button>Alles selecteren</button>
+			  <button>Alles deselecteren</button>
+			  <article>
+				<input type="checkbox">
+				<label>Bon cadeau carte de membre</label>
+			  </article>
+			  <article>
+				<input type="checkbox">
+				<label>Bon cadeau animal adventure</label>
+			  </article>
+			  <article>
+				<input type="checkbox">
+				<label>Donations</label>
+			  </article>
+			  <article>
+				<input type="checkbox">
+				<label>Ticket cadeau</label>
+			  </article>
 			</fieldset>
 			<button id="verbergButton">Verbergen</button>
-			<button>zoeken</button>
-		</section>
+			<button>Zoeken</button>
+		  </section>
 		<!--section5-->
 		<section>
 			<table>
@@ -110,7 +109,7 @@
 					<td><h2>Dagticket Kind (3-11 jaar)</h2>
 						<p>Ticket voor 1 dag voor kinderen (3-11 jaar), 365 dagen geldig vanaf de aankoopdatum</p></td>
 					<td><input type="number" id="quantity2" value="1" min="0" max="100" data-price="42"></td>
-					<td class="productAantal"><p>€ 42,00</p></td>
+					<td><p>€ 42,00</p></td>
 				</tr>
 				<tr>
 					<td><a href="https://webshop.pairidaiza.eu/Products/Detail?id=24edcdf7-5167-ed11-9593-82e169b896b5"><img src="images/Ticket1.png" alt="Ticket parking"></a></td>
@@ -189,6 +188,7 @@
 		  <li><a href="https://webshop.pairidaiza.eu/Basket/Cart">Winkelmandje</a></li>
 		</ul>
 	  </footer>
+	<script src="scripts/script.js"></script>
 </body>
 	
 </html>
