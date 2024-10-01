@@ -12,36 +12,16 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	--color-text: #262626;
-	--color-background-block: white;
-	--color-background: #f2f2f2;
-	--color-highlight: #dc9d23;
-	--text-footer: #808080;
-	--color-background-footer: #d9d9d9;
-	--color-background-2: #000000;
-	--bakcground-footer: #F2F2F2;
-}
-
-
-:root {
 	color-scheme: light dark;
 
 	--color-text: #262626;
-	/* Of gebruik een andere kleur voor dark mode */
 	--color-background-block: white;
-	/* Pas aan voor dark mode */
 	--color-background: #f2f2f2;
-	/* Pas aan voor dark mode */
 	--color-highlight: #dc9d23;
-	/* Pas aan voor dark mode */
 	--text-footer: #808080;
-	/* Pas aan voor dark mode */
 	--color-background-footer: #d9d9d9;
-	/* Pas aan voor dark mode */
 	--color-background-2: #000000;
-	/* Pas aan voor dark mode */
 	--background-footer: #F2F2F2;
-	/* Pas aan voor dark mode */
 }
 
 :root:has([value="light"]:checked) {
@@ -67,6 +47,11 @@
 	--color-background-2: white;
 	--background-footer: black;
 }
+
+:root:has([value="dark"]:checked) .pagina2 nav {
+	background-color: rgb(100, 100, 100);
+}
+
 
 /****************/
 /* JOUW STYLING */
@@ -927,6 +912,12 @@ main .member .link {
 	height: 4em;
 }
 
+main .member .link:focus {
+	background-color: var(--color-highlight);
+	color: var(--color-background-block);
+	transition: .5s ease-out;
+}
+
 main .member .link p {
 	padding-left: 1em;
 	padding-top: 1em;
@@ -962,6 +953,7 @@ main .inschrijven button {
 	margin-bottom: 2em;
 }
 
+
 main section:nth-of-type(10) {
 	display: flex;
 	flex-direction: row;
@@ -989,7 +981,6 @@ main #inschrijvingsformulier {
 	margin: 1em;
 	border-radius: 0.5em;
 	overflow-x: auto;
-
 }
 
 #closeButton {
@@ -1477,14 +1468,10 @@ table h2 {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	margin-right: 1em;
 	color: var(--color-text);
-}
-
-.footer2 ul li {
-	margin: 1em;
-	margin-top: 2em;
-	margin-bottom: 2em;
+	gap: 1em;
 }
 
 .footer2 ul li a {
