@@ -696,6 +696,15 @@ main .carousel ul li h2 {
 	z-index: 1;
 }
 
+main .carousel ul li a img {
+	width: 3em;
+	height: 3em;
+	position: absolute;
+	bottom: 0.5em;
+	z-index: 1;
+	margin-left: 16em;
+}
+
 /*************/
 /* SECTION 7 */
 /************/
@@ -1182,7 +1191,6 @@ footer section address p {
 	color: var(--text-footer);
 	margin: 0;
 }
-
 
 /********************/
 /* FOOTER SECTION 4 */
