@@ -80,11 +80,11 @@ function openFormulier() {
   }
 }
 
-/*document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     addAnimation();
   }
-});*/
+});
 
 
 menuButton.addEventListener('click', openMenu);

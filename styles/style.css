@@ -1,8 +1,10 @@
 /**************/
 /* CSS REMEDY/RESET */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
 
@@ -22,41 +24,50 @@
 
 
 :root {
-    color-scheme: light dark;
+	color-scheme: light dark;
 
-    --color-text: #262626; /* Of gebruik een andere kleur voor dark mode */
-    --color-background-block: white; /* Pas aan voor dark mode */
-    --color-background: #f2f2f2; /* Pas aan voor dark mode */
-    --color-highlight: #dc9d23; /* Pas aan voor dark mode */
-    --text-footer: #808080; /* Pas aan voor dark mode */
-    --color-background-footer: #d9d9d9; /* Pas aan voor dark mode */
-    --color-background-2: #000000; /* Pas aan voor dark mode */
-    --background-footer: #F2F2F2; /* Pas aan voor dark mode */
+	--color-text: #262626;
+	/* Of gebruik een andere kleur voor dark mode */
+	--color-background-block: white;
+	/* Pas aan voor dark mode */
+	--color-background: #f2f2f2;
+	/* Pas aan voor dark mode */
+	--color-highlight: #dc9d23;
+	/* Pas aan voor dark mode */
+	--text-footer: #808080;
+	/* Pas aan voor dark mode */
+	--color-background-footer: #d9d9d9;
+	/* Pas aan voor dark mode */
+	--color-background-2: #000000;
+	/* Pas aan voor dark mode */
+	--background-footer: #F2F2F2;
+	/* Pas aan voor dark mode */
 }
 
 :root:has([value="light"]:checked) {
-    color-scheme: light;
-    --color-text: #262626;
-    --color-background-block: white;
-    --color-background: #f2f2f2;
-    --color-highlight: #dc9d23;
-    --text-footer: #808080;
-    --color-background-footer: #d9d9d9;
-    --color-background-2: #000000;
-    --background-footer: #F2F2F2;
+	color-scheme: light;
+	--color-text: #262626;
+	--color-background-block: white;
+	--color-background: #f2f2f2;
+	--color-highlight: #dc9d23;
+	--text-footer: #808080;
+	--color-background-footer: #d9d9d9;
+	--color-background-2: #000000;
+	--background-footer: #F2F2F2;
 }
 
 :root:has([value="dark"]:checked) {
-    color-scheme: dark;
-    --color-text: white;
-    --color-background-block: black;
-    --color-background: black;
-    --color-highlight: darkorange;
-    --text-footer: black;
-    --color-background-footer: darkgrey;
-    --color-background-2: white;
-    --background-footer: black;
+	color-scheme: dark;
+	--color-text: white;
+	--color-background-block: black;
+	--color-background: black;
+	--color-highlight: darkorange;
+	--text-footer: black;
+	--color-background-footer: darkgrey;
+	--color-background-2: white;
+	--background-footer: black;
 }
+
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -68,7 +79,7 @@
 }
 
 body {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	margin: 0;
 	animation: fadeInAnimation ease 3s;
 	animation-iteration-count: 1;
@@ -79,6 +90,7 @@ body {
 	0% {
 		opacity: 0%;
 	}
+
 	100% {
 		opacity: 1;
 	}
@@ -109,49 +121,50 @@ figure {
 }
 
 /************/
-/* HEADER */
+/*NAV VIDEO*/
 /**********/
 
 nav {
-    position: relative;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 0 1.25em;
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 0 1.25em;
 }
 
 .video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    overflow: hidden;
-    z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	overflow: hidden;
+	z-index: -1;
 }
 
 .video-background video {
 	position: relative;
-    width: 100vw;
-    height: 30vh;
-    object-fit: cover;
+	width: 100vw;
+	height: 30vh;
+	object-fit: cover;
 }
 
-#playButton, #pauseButton {
+#playButton,
+#pauseButton {
 	background-color: #dc9d23;
 	border-radius: 50%;
 	padding: 0.5em;
 }
 
 nav ul {
-    list-style: none;
-    margin: 1.25rem;
-    padding: 0;
-    display: flex;
+	list-style: none;
+	margin: 1.25rem;
+	padding: 0;
+	display: flex;
 	width: 80vw;
 }
 
 nav li {
-    margin-right: 3rem;
+	margin-right: 3rem;
 	width: 100vw;
 }
 
@@ -175,17 +188,19 @@ nav .logo {
 	margin-left: -1em;
 	margin-top: -0.5em;
 	width: 3em;
-    height: 3em;
+	height: 3em;
 }
 
 select {
 	margin: -1em;
-    padding: 0.3em;
+	padding: 0.3em;
 }
+
 /***********/
 /*NAVOP&NEER*/
 /************/
-.headerup, .headerdown {
+.headerup,
+.headerdown {
 	height: 8vh;
 	width: 100vw;
 	position: fixed;
@@ -205,6 +220,7 @@ select {
 .headerdown select {
 	color: var(--color-text);
 }
+
 /****************/
 /*HAMBURGERMENU*/
 /**************/
@@ -220,7 +236,7 @@ select {
 	overflow-y: scroll;
 }
 
-#exitButton{
+#exitButton {
 	width: 10vw;
 	height: 3vh;
 	margin: 1em;
@@ -228,7 +244,7 @@ select {
 	border-style: none;
 }
 
-#exitButton img{
+#exitButton img {
 	width: 10vw;
 	height: 4vh;
 }
@@ -245,19 +261,28 @@ select {
 	margin-bottom: 1.5em;
 }
 
+#hamburgermenu h2:first-child {
+	position: absolute;
+	font-size: 0%;
+	margin: 0;
+	padding: 0;
+}
+
 #hamburgermenu section:nth-of-type(1) a {
 	text-decoration: none;
 	color: var(--color-text);
 	text-transform: uppercase;
 }
 
-#hamburgermenu section:nth-of-type(2) select{
-	width: 24em;;
+#hamburgermenu section:nth-of-type(2) select {
+	width: 24em;
+	;
 	height: 5vh;
 	margin-left: 2em;
 	border: none;
 	border-radius: 1em 1em 1em 1em;
 }
+
 #hamburgermenu section:nth-of-type(3) {
 	margin-top: 1em;
 	margin-bottom: 1.5em;
@@ -283,7 +308,7 @@ select {
 	width: 90vw;
 	margin-bottom: 3vh;
 	background-color: var(--color-background);
- 	border-radius: 1.6rem;
+	border-radius: 1.6rem;
 }
 
 #hamburgermenu section:nth-of-type(4) h2 {
@@ -295,6 +320,13 @@ select {
 	margin: 0;
 	padding-top: 1em;
 	padding-bottom: 1em;
+}
+
+#hamburgermenu section:nth-of-type(4) h2:first-child {
+	position: absolute;
+	font-size: 0%;
+	margin: 0;
+	padding: 0;
 }
 
 #hamburgermenu section:nth-of-type(4) h3 {
@@ -386,6 +418,13 @@ main .menu img {
 	border-radius: 50%;
 }
 
+main .menu .pauzeenplay {
+	position: absolute;
+	font-size: 0%;
+	margin: 0;
+	padding: 0;
+}
+
 main .vierkantmenu {
 	background-color: var(--color-background);
 	border-top-left-radius: 1.6rem;
@@ -404,7 +443,7 @@ main .vierkantmenu:nth-of-type(2) {
 
 main .vierkantmenu img {
 	grid-column: 1/2;
-	grid-row:1;
+	grid-row: 1;
 	margin-left: 1em;
 }
 
@@ -421,7 +460,7 @@ main .vierkantmenu .vierkant {
 	font-size: 0.8rem;
 	text-transform: uppercase;
 	grid-column: 2/3;
-	grid-row:1;
+	grid-row: 1;
 	margin: 0;
 	margin-top: 1.5em;
 }
@@ -430,7 +469,7 @@ main .vierkantmenu h3 {
 	font-family: "Marcellus";
 	color: var(--color-highlight);
 	grid-column: 2/3;
-	grid-row:2;
+	grid-row: 2;
 	margin: 0;
 }
 
@@ -477,13 +516,13 @@ main .intro {
 	margin-top: 3em;
 	margin-left: 2em;
 	margin-right: 3em;
-	margin-bottom:3em;
+	margin-bottom: 3em;
 }
 
 main .intro p {
 	margin-left: 2em;
 	margin-right: 2em;
-	margin-bottom:3em;
+	margin-bottom: 3em;
 }
 
 /*************/
@@ -530,6 +569,7 @@ main .rapport a p {
 	margin-top: 2.3em;
 	color: var(--color-highlight);
 }
+
 /*************/
 /* SECTION 4 */
 /************/
@@ -575,8 +615,8 @@ main .carouselbol ul {
 	gap: 0.5em;
 	padding: 1em;
 	list-style: none;
-  	overflow-x: scroll;
-  	scroll-snap-type: x mandatory;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
 	scroll-behavior: smooth;
 	position: relative;
 }
@@ -588,22 +628,22 @@ main .carouselbol ul li {
 	background-color: #FFF;
 	scroll-snap-align: center;
 	position: relative;
-  }
-  
-  main .carouselbol ul li img {
+}
+
+main .carouselbol ul li img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	border-radius: 10%;
-  }
-  
-  main .carouselbol h2 {
+}
+
+main .carouselbol h2 {
 	text-align: center;
 	font-size: 2em;
 	margin: 0;
-  }
-  
-  main .carouselbol ul li h3 {
+}
+
+main .carouselbol ul li h3 {
 	font-family: "Marcellus";
 	position: absolute;
 	bottom: -0.5em;
@@ -614,7 +654,8 @@ main .carouselbol ul li {
 	font-weight: bold;
 	text-align: start;
 	z-index: 1;
-  }
+}
+
 /*************/
 /* SECTION 6 */
 /************/
@@ -623,16 +664,16 @@ main .carousel ul {
 	gap: 0.5em;
 	padding: 1em;
 	list-style: none;
-  	overflow-x: scroll;
-  	scroll-snap-type: x mandatory;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
 }
 
-main .carousel ul li{
+main .carousel ul li {
 	flex-shrink: 0;
-  	width: 20em;
-  	height: 30vh;
-  	background-color: #FFF;
-  	scroll-snap-align: center;
+	width: 20em;
+	height: 30vh;
+	background-color: #FFF;
+	scroll-snap-align: center;
 	position: relative;
 }
 
@@ -654,10 +695,11 @@ main .carousel ul li h2 {
 	text-align: start;
 	z-index: 1;
 }
+
 /*************/
 /* SECTION 7 */
 /************/
-main .carouselautomatisch{
+main .carouselautomatisch {
 	overflow: hidden;
 }
 
@@ -666,17 +708,17 @@ main .carouselautomatisch .scroller {
 	gap: 0.5em;
 	padding: 1em;
 	list-style: none;
-  	scroll-snap-type: x mandatory;
+	scroll-snap-type: x mandatory;
 	overflow: hidden;
 	width: 100vw;
 }
 
-main .carouselautomatisch .scroller li{
+main .carouselautomatisch .scroller li {
 	flex-shrink: 0;
-  	width: 20em;
-  	height: 30vh;
-  	background-color: #FFF;
-  	scroll-snap-align: center;
+	width: 20em;
+	height: 30vh;
+	background-color: #FFF;
+	scroll-snap-align: center;
 	position: relative;
 }
 
@@ -704,10 +746,10 @@ main .carouselautomatisch[data-animated="true"] {
 }
 
 main .scroller[data-animated="true"] {
-    display: flex;
+	display: flex;
 	width: max-content;
 	flex-wrap: wrap;
-    animation: scroll 160s linear infinite;
+	animation: scroll 160s linear infinite;
 }
 
 @keyframes scroll {
@@ -756,20 +798,20 @@ main .cijfersdonker p {
 	font-size: 0.813rem;
 }
 
-main .gradient{
+main .gradient {
 	position: relative;
 	z-index: 1;
 }
 
 main .gradient::before {
 	content: "";
-  	position: absolute;
- 	top: 0;
-  	left: 0;
-  	width: 100%;
-  	height: 50%;
-  	background: linear-gradient(0deg,rgba(38,38,38,0) 0%,rgba(38,38,38,.71) 45%,rgb(38,38,38) 100%);
-  	z-index: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background: linear-gradient(0deg, rgba(38, 38, 38, 0) 0%, rgba(38, 38, 38, .71) 45%, rgb(38, 38, 38) 100%);
+	z-index: 2;
 }
 
 main .gradient img {
@@ -840,10 +882,10 @@ main .member {
 	margin-top: 3em;
 	margin-left: 2em;
 	margin-right: 3em;
-	margin-bottom:3em;
+	margin-bottom: 3em;
 }
 
-main .member h2:first-child{
+main .member h2:first-child {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	color: var(--color-highlight);
@@ -851,7 +893,7 @@ main .member h2:first-child{
 	margin: 0;
 }
 
-main .member h2{
+main .member h2 {
 	font-size: 1.5em;
 }
 
@@ -927,17 +969,18 @@ main #inschrijvingsformulier {
 	display: none;
 	position: fixed;
 	bottom: 0;
-    background-color: var(--color-background-block);
-    height: 95vh;
-    width: 90vw;
-    z-index: 2;
-    flex-direction: column;
+	background-color: var(--color-background-block);
+	height: 95vh;
+	width: 90vw;
+	z-index: 2;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-    padding: 0;
+	padding: 0;
 	margin: 1em;
 	border-radius: 0.5em;
 	overflow-x: auto;
+
 }
 
 #closeButton {
@@ -958,20 +1001,21 @@ main #inschrijvingsformulier {
 main form {
 	display: flex;
 	flex-direction: column;
-	
+
 }
 
 main form label {
 	margin-left: 1em;
 }
 
-main form select, main form input {
+main form select,
+main form input {
 	width: 20em;
-  	height: 5vh;
-  	margin-left: 2em;
+	height: 5vh;
+	margin-left: 2em;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
-  	border: none;
+	border: none;
 	background-color: transparent;
 	color: var(--text-footer);
 }
@@ -987,7 +1031,7 @@ main form p:last-of-type {
 	margin-bottom: 0;
 }
 
-main #inschrijvingsformulier #inschrijfButton {
+main #inschrijvingsformulier #inschrijfButton2 {
 	border-radius: 5em;
 	padding: 1em;
 	background-color: var(--color-highlight);
@@ -1001,6 +1045,7 @@ main #inschrijvingsformulier #inschrijfButton {
 /**********/
 footer {
 	background-color: var(--color-background-footer);
+	padding-top: 1em;
 }
 
 footer h2 {
@@ -1020,12 +1065,20 @@ footer label {
 footer article:nth-of-type(1) {
 	margin-bottom: 1em;
 }
+/*h2 wegwerken*/
+footer .h2wegwerken {
+	position: absolute;
+	font-size: 0%;
+	margin: 0;
+	padding: 0;
+}
+
 details {
 	display: inline-block;
 	width: 90%;
 	border-bottom: thin var(--text-footer) solid;
 }
-  
+
 summary {
 	list-style: none;
 	display: flex;
@@ -1036,7 +1089,7 @@ summary {
 	font-size: 1.25em;
 	cursor: pointer;
 }
-  
+
 summary::after {
 	content: '';
 	width: 1.1em;
@@ -1046,8 +1099,8 @@ summary::after {
 	margin-left: 0.75em;
 	transition: 0.2s;
 }
-  
-details[open] > summary::after {
+
+details[open]>summary::after {
 	transform: rotate(180deg);
 }
 
@@ -1075,10 +1128,10 @@ details a {
 /********************/
 footer section:nth-of-type(1) {
 	display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.5em;
-    width: 80vw;
-    margin: 0 auto;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0.5em;
+	width: 80vw;
+	margin: 0 auto;
 	border-bottom: thin var(--text-footer) solid;
 }
 
@@ -1086,7 +1139,7 @@ footer section:nth-of-type(1) article {
 	display: grid;
 	grid-template-columns: 9vw 26vw;
 	grid-template-rows: 10vw 10vw;
-    font-family: Arial, sans-serif;
+	font-family: Arial, sans-serif;
 }
 
 footer section:nth-of-type(1) article p {
@@ -1097,8 +1150,8 @@ footer section:nth-of-type(1) article p {
 
 footer section:nth-of-type(1) article h2 {
 	font-size: 1.2em;
-    font-weight: 500;
-    margin-top: 0;
+	font-weight: 500;
+	margin-top: 0;
 	margin-left: 3.5em;
 }
 
@@ -1136,14 +1189,14 @@ footer section address p {
 /********************/
 footer section:nth-of-type(3) ul {
 	display: flex;
-	align-content: center;
 	justify-content: center;
 }
 
 footer section:nth-of-type(3) img {
 	width: 40vw;
-	margin-left: 2em;
+	margin-left: 1.5em;
 }
+
 /********************/
 /* FOOTER SECTION 5 */
 /********************/
@@ -1155,7 +1208,7 @@ footer section:nth-of-type(3) img {
 }
 
 .socials img {
-	width:2em;
+	width: 2em;
 	border-radius: 50%;
 }
 
@@ -1213,7 +1266,7 @@ footer section:nth-of-type(5) p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color:var(--text-footer);
+	color: var(--text-footer);
 	font-size: 1.5em;
 	font-family: "Marcellus";
 	padding-bottom: 2em;
@@ -1240,6 +1293,7 @@ footer section:nth-of-type(5) p {
 	margin: 0;
 	font-size: 1.3em;
 }
+
 /************/
 /* NAV PAGINA2 */
 /************/
@@ -1264,6 +1318,7 @@ footer section:nth-of-type(5) p {
 	font-size: 1em;
 	justify-content: space-evenly;
 }
+
 /************/
 /*TITEL + ZOEKEN PAGINA2 */
 /************/
@@ -1282,7 +1337,8 @@ main .zoeken input {
 /***********/
 /*SECTION1*/
 /**********/
-.dagticket h2, .membershipcard h2 {
+.dagticket h2,
+.membershipcard h2 {
 	color: var(--color-highlight);
 }
 
@@ -1293,6 +1349,7 @@ main .zoeken input {
 .dagticket p:nth-of-type(2) {
 	font-weight: bolder;
 }
+
 /***********/
 /*SECTION2*/
 /**********/
@@ -1313,6 +1370,13 @@ section:nth-of-type(4) h2 {
 	margin-bottom: 1em;
 }
 
+section:nth-of-type(4) .h2wegwerken {
+	position: absolute;
+	font-size: 0%;
+	margin: 0;
+	padding: 0;
+}
+
 fieldset {
 	border: thin var(--color-background-footer) solid;
 	width: 90vw;
@@ -1321,6 +1385,7 @@ fieldset {
 section:nth-of-type(4) button {
 	padding: 1em;
 }
+
 /***********/
 /*TABLE + SECTION5*/
 /**********/
@@ -1337,6 +1402,7 @@ table {
 table h2 {
 	font-size: 1em;
 }
+
 .main2 table {
 	width: 90vw;
 }
@@ -1359,6 +1425,13 @@ table h2 {
 /**********/
 .main2 .info {
 	width: 90vw;
+}
+
+.main2 .info .h2wegwerken {
+	position: absolute;
+	font-size: 0%;
+	margin: 0;
+	padding: 0;
 }
 
 .main2 .info ul li address {
