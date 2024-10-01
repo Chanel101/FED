@@ -883,31 +883,117 @@ main .member .link p {
 	color: var(--color-highlight);
 }
 
-#inschrijvingsformulier {
+/*************/
+/* SECTION 10 */
+/************/
+main .inschrijven {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+main .inschrijven h2 {
+	text-align: center;
+	margin: 0;
+}
+
+main .inschrijven button {
+	padding: 1em;
+	border: 0.05em solid #dc9d23;
+	border-radius: 4em;
+	padding: 1em;
+	background-color: var(--color-background-block);
+	text-decoration: none;
+	width: 12em;
+	height: 4em;
+	align-self: center;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+
+main section:nth-of-type(10) {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 80vw;
+	gap: 1.5em;
+	margin-left: 2em;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+main #inschrijvingsformulier {
 	display: none;
 	position: fixed;
-    background-color: var(--color-background-footer);
-    height: 50vh;
-    width: 100vw;
+	bottom: 0;
+    background-color: var(--color-background-block);
+    height: 95vh;
+    width: 90vw;
     z-index: 2;
     flex-direction: column;
 	justify-content: center;
 	align-items: center;
     padding: 0;
+	margin: 1em;
+	border-radius: 0.5em;
+	overflow-x: auto;
 }
 
-#closeButton{
-	width: 10vw;
+#closeButton {
+	width: 5vw;
 	height: 3vh;
-	margin: 1em;
+	margin-right: 1em;
+	margin-left: 22em;
 	background-color: transparent;
 	border-style: none;
 	cursor: pointer;
 }
 
-#closeButton img{
-	width: 10vw;
-	height: 4vh;
+#closeButton img {
+	width: 5vw;
+	height: 2vh;
+}
+
+main form {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+main form label {
+	margin-left: 1em;
+}
+
+main form select, main form input {
+	width: 20em;
+  	height: 5vh;
+  	margin-left: 2em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+  	border: none;
+	background-color: transparent;
+	color: var(--text-footer);
+}
+
+main form input:last-of-type {
+	width: 8vw;
+}
+
+main form p:last-of-type {
+	width: 60vw;
+	margin-left: 5em;
+	margin-top: -3em;
+	margin-bottom: 0;
+}
+
+main #inschrijvingsformulier #inschrijfButton {
+	border-radius: 5em;
+	padding: 1em;
+	background-color: var(--color-highlight);
+	color: var(--color-background-block);
+	text-shadow: none;
+	border: none;
 }
 
 /************/

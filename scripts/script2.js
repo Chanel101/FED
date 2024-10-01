@@ -6,8 +6,15 @@ const fieldset = document.getElementById("artikelOpties");
 const quantityInputs = document.querySelectorAll('input[type="number"]');
 const totalPriceElement = document.getElementById('totaalPrijs');
 
+const checkboxes = document.querySelectorAll('.checkbox');
+const rows = document.querySelectorAll('tr[data-item]');
+const selecteerAllesButton = document.getElementById('allesSelecteren');
+const deselecteerAllesButton = document.getElementById('allesDeselecteren');
+const zoekButton = document.getElementById('zoekButton');
+
 let state_fieldset = true;
 
+//verbergen van filteropties
 function verbergen_openen() {
     if (state_fieldset == true) {
       fieldset.style.display = 'none';
@@ -19,7 +26,7 @@ function verbergen_openen() {
       verbergButton.textContent = 'verbergen';
     }
   }
-
+//updaten van prijs wanneer aantal veranderd
 function updateTotalPrice() {
     let total = 0;
   
@@ -29,11 +36,11 @@ function updateTotalPrice() {
       total += quantity * price;
     });
   
-    // Update the total price in the HTML
+ // Update the total price in the HTML
     totalPriceElement.textContent = `€ ${total.toFixed(2)}`;
   }
   
-  // Attach event listener to each quantity input
+// Attach event listener to each quantity input
   quantityInputs.forEach(input => {
     input.addEventListener('input', updateTotalPrice);
   });
@@ -41,5 +48,37 @@ function updateTotalPrice() {
   // Initial calculation on page load
   updateTotalPrice();
 
+//filteren van rijen in de tabel via de checkboxes
+function filterTableRows() {
+  const selectedValues = Array.from(checkboxes)
+    .filter(checkbox => checkbox.checked)
+    .map(checkbox => checkbox.value);
 
-  verbergButton.addEventListener('click', verbergen_openen);
+rows.forEach(row => {
+    const itemType = row.getAttribute('data-item');
+    if (selectedValues.includes(itemType)) {
+      row.style.display = ''; // Laat zien
+    } else {
+      row.style.display = 'none'; // Verberg
+    }
+  });
+}
+
+//alles selecteren
+function selectAllCheckboxes() {
+  checkboxes.forEach(checkbox => {
+    checkbox.checked = true;
+  });
+}
+
+//alles deselecteren
+function deselectAllCheckboxes() {
+  checkboxes.forEach(checkbox => {
+    checkbox.checked = false;
+  });
+}
+
+verbergButton.addEventListener('click', verbergen_openen);
+zoekButton.addEventListener('click', filterTableRows);
+selecteerAllesButton.addEventListener('click', selectAllCheckboxes);
+deselecteerAllesButton.addEventListener('click', deselectAllCheckboxes);
