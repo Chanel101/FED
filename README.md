@@ -274,6 +274,8 @@ Ingmar's website (Hema)
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
+  Ik had graag willen hebben dat bij mijn inschrijfformulier dat ik daar een foutmelding kreeg wanneer iets niet goed was ingevuld maar dat lukte me uiteindelijk niet meer. En ik had graag ook nog een pop-up willen maken wanneer de inschrijving gelukt is. Maar daar ben ik niet meer aan toe gekomen.
+
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
