@@ -78,6 +78,7 @@ function deselectAllCheckboxes() {
     checkbox.checked = false;
   });
 }
+//de hele functie is gevonden met chatGPT nadat ik het niet meer kon vinden na echt een hele dag zoeken.
 
 verbergButton.addEventListener('click', verbergen_openen);
 zoekButton.addEventListener('click', filterTableRows);

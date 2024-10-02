@@ -76,6 +76,7 @@ function scrollHide() {
 window.onscroll = function () {
   scrollHide(); //roep scrolHide-functie aan bij scrollen
 };
+//gevonden met behulp van Diego 
 
 //VIDEO PAUZE EN PLAY
 //bij klikken speel video af
@@ -113,7 +114,8 @@ function openFormulier() {
   } else {
     formulier.style.display = "none"; //zet displaystijl op none om form niet zichtbaar te maken
   }
-} //
+}
+//na gemaakt van het hamburgermenu
 
 formButton.addEventListener('click', openFormulier);
 closeButton.addEventListener('click', openFormulier);

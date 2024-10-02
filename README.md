@@ -267,6 +267,11 @@ Ingmar's website (Hema)
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
+  Ik ben blij dat toen mijn hamburgermenu werkte dat ik wist hoe ik mijn inschrijvingsformulier moest doen.
+  Het was ook interessant om te leren dat je veel toegankelijker kan zijn door aria-label te gebruiken.
+  Ik vond het ook interessant om te leren over filter systemen ook al was het best wel moeilijk om daarvoor code te vinden die ik begrijp want het wordt als snel ingewikkeld.
+  Daarnaast vond het het ook cool dat het scrollen met de navigatiebalk ook wel kan met niet veel lijntjes code.
+  Ook de automatische carousel was interessant ook al wil de loop dat oneindig loopt niet werken de animatie werkt wel!
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
@@ -292,7 +297,7 @@ Ingmar's website (Hema)
   2. De checkbox heb ik ook gevonden in de developer tools van Mozilla Firefox. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox 
   3. Het menu onder de video heb ik hulp bij gekregen van Diego om hier te werken met grid.
   4. Voor de carousel puur in css heb ik deze code gevolgd. https://www.nieknijland.nl/blog/make-a-responsive-carousel-with-just-css
-  5. Voor de gradient op de tijger foto heb ik hulp gekregen van de sutdentenassistent. https://codepen.io/Dave-deo/pen/rNEEEWr?editors=1100 
+  5. Voor de gradient op de tijger foto heb ik hulp gekregen van de studentenassistent. https://codepen.io/Dave-deo/pen/rNEEEWr?editors=1100 
   6. Voor het stylen van de details en summary in de footer heb ik deze code gebruikt. https://www.sitepoint.com/style-html-details-element/ 
   7.  Hamburgermenu laten verschijnen en verdwijnen via javascript. https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
   8. https://youtu.be/iLmBy-HKIAw?si=-56qVNNYvvBA1AkZ deze tutorial heb ik gevolgd voor de automatische carousel.
@@ -301,4 +306,5 @@ Ingmar's website (Hema)
   11. de prijs wou niet up to date zijn wanneer ik er een ticket bij deed. Met de prompt: "wanneer iemand op de input type number klikt moet het bedrag onderaan naast de button veranderen. hoe doe ik dat met javascript?"
   12. de screenreader wou mijn hamburgermenu niet lezen en ik heb dit proberen toegankelijker te maken met chatGPT. Met deze prompt:"ik wil dat de screenreader het hamburgermenu leest wnr die opengeplakt is en niet de andere nav's eerst, met html css en javascript." 
   13. ik had graag de video willen pauzeren en afspelen maar wanneer de gebruiker dat zelf wil maar dat ging niet toen iemand op de video gewoon wou klikken dus heb ik buttons gemaakt om het wat makkelijker te maken. Prompt: "ik wil graag dat je de video kan pauzeren en laten afspelen wanneer de gebruiker dat wil in javascript." ChatGPT
+  14. voor light en dark mode kreeg ik veel errors toen ik de code uit de les gebruikte. Hiervoor heb ik aan ChatGPT gevraagd hoe ik dit kon oplossen. "De prompt: wrm krijg ik heel veel error meldingen bij al mijn var voro de kleuren ?"
 </details>

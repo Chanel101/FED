@@ -7,7 +7,6 @@
 	box-sizing: border-box;
 }
 
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -15,6 +14,10 @@
 	color-scheme: light dark;
 
 	--color-text: #262626;
+	--color-h2: #dc9d23;
+	--color-h2-2: #262626;
+	--color-h3: #dc9d23;
+	--color-text-black-background: #ffff;
 	--color-background-block: white;
 	--color-background: #f2f2f2;
 	--color-highlight: #dc9d23;
@@ -51,7 +54,7 @@
 :root:has([value="dark"]:checked) .pagina2 nav {
 	background-color: rgb(100, 100, 100);
 }
-
+/*mijn dark & light mode wou niet werken met de code uit de les dus heb ik chatGPT gevraagd waarom het niet werkt, ik kreeg ook veel errormeldingen*/
 
 /****************/
 /* JOUW STYLING */
@@ -420,6 +423,7 @@ main .menu .pauzeenplay {
 	padding: 0;
 }
 
+/*dankzij hulp van Diego heb ik een start kunnen maken met grid, nu begrijp ik het ook beter*/
 main .vierkantmenu {
 	background-color: var(--color-background);
 	border-top-left-radius: 1.6rem;
@@ -814,6 +818,8 @@ main .cijfersdonker p {
 	font-size: 0.813rem;
 }
 
+/*https://codepen.io/Dave-deo/pen/rNEEEWr?editors=1100*/
+/*David heeft me geholpen met de gradient die ik over de tijger wou hebben*/
 main .gradient {
 	position: relative;
 	z-index: 1;
@@ -1124,6 +1130,9 @@ summary {
 	cursor: pointer;
 }
 
+
+/*gevonden dankzij de tutorial die ik kreeg van David*/
+/*https://youtu.be/iLmBy-HKIAw?si=-56qVNNYvvBA1AkZ*/
 summary::after {
 	content: '';
 	width: 1.1em;
