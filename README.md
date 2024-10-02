@@ -248,12 +248,11 @@ Ingmar's website (Hema)
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
   - animatie afmaken dus bv. als er iets in het winkelmandje komt dat de button iets doet zoals met :focus, ...
-  - focus op 
-  - 
+  - focus eerst op de makkelijke dingen en wanneer ik tijd heb kan ik verder doen met de carousel.
+  - ook goed mijn bronnen bijhouden
+  - surface plane opties goed bekijken en wat ik ga doen kiezen.
 
 </details>
-
-
 
 
 
@@ -287,10 +286,6 @@ Ingmar's website (Hema)
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
   1. het dropdown menu waar je kan kiezen tussen verschillende talen enzovoort, heb dit gevonden door de developer tools van Mozilla Firefox. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select 
   2. De checkbox heb ik ook gevonden in de developer tools van Mozilla Firefox. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox 
   3. Het menu onder de video heb ik hulp bij gekregen van Diego om hier te werken met grid.
@@ -300,4 +295,8 @@ Ingmar's website (Hema)
   7.  Hamburgermenu laten verschijnen en verdwijnen via javascript. https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
   8. https://youtu.be/iLmBy-HKIAw?si=-56qVNNYvvBA1AkZ deze tutorial heb ik gevolgd voor de automatische carousel.
   9. voor de play en pauze button voor de video heb ik deze website gebruikt om me daarbij te helpen. https://www.geeksforgeeks.org/how-to-play-pause-video-using-jquery/
+  10. Voor de het filter systeem met de checkboxes en dat dan bepaalde verdwijnen in de tabel heb ik via chatGPT gedaan, na zeker een hele dag had ik het de dag erna eindelijk gevonden. Met deze prompt: "ik wil voor mijn pagina dat wanneer ik een checkbox aanklik dat alleen die tickets te zien zijn. dat wil ik doen met html css en javascript."
+  11. de prijs wou niet up to date zijn wanneer ik er een ticket bij deed. Met de prompt: "wanneer iemand op de input type number klikt moet het bedrag onderaan naast de button veranderen. hoe doe ik dat met javascript?"
+  12. de screenreader wou mijn hamburgermenu niet lezen en ik heb dit proberen toegankelijker te maken met chatGPT. Met deze prompt:"ik wil dat de screenreader het hamburgermenu leest wnr die opengeplakt is en niet de andere nav's eerst, met html css en javascript." 
+  13. ik had graag de video willen pauzeren en afspelen maar wanneer de gebruiker dat zelf wil maar dat ging niet toen iemand op de video gewoon wou klikken dus heb ik buttons gemaakt om het wat makkelijker te maken. Prompt: "ik wil graag dat je de video kan pauzeren en laten afspelen wanneer de gebruiker dat wil in javascript." ChatGPT
 </details>

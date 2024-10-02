@@ -25,7 +25,8 @@ function verbergen_openen() {
       state_fieldset = true;
       verbergButton.textContent = 'verbergen';
     }
-  }
+  } //met wat hulp van Mariska en het herbekijken van "inleiding programmeren vorig jaar"
+
 //updaten van prijs wanneer aantal veranderd
 function updateTotalPrice() {
     let total = 0;
@@ -36,7 +37,7 @@ function updateTotalPrice() {
       total += quantity * price;
     });
   
- // Update the total price in the HTML
+ //update de totale prijs in HTML
     totalPriceElement.textContent = `€ ${total.toFixed(2)}`;
   }
   

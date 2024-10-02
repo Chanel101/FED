@@ -85,7 +85,7 @@ playButton.addEventListener("click", function () {
 //bij klikken pauzeer video
 pauseButton.addEventListener("click", function () {
   video.pause(); //pauzeert video
-});
+}); //eerst lukte het door alleen video.play() te gebruiken maar ik wou hem ook pauzeren en on click lukte niet dus ik heb buttons gemaakt en dan aan chatGPT voor de rest gevraagd om het te doen.
 
 //AUTOMATISCHE CAROUSEL
 //animatie toevoegen aan scrollers
@@ -113,7 +113,7 @@ function openFormulier() {
   } else {
     formulier.style.display = "none"; //zet displaystijl op none om form niet zichtbaar te maken
   }
-}
+} //
 
 formButton.addEventListener('click', openFormulier);
 closeButton.addEventListener('click', openFormulier);

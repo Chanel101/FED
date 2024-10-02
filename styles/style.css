@@ -59,8 +59,10 @@
 
 /* jouw code */
 @font-face {
-	font-family: "Marcellus";
+	font-family: "Marcellus", Arial, Helvetica, sans-serif;
 	src: url("../font/marcellus-regular-webfont.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
 }
 
 body {
@@ -1387,11 +1389,6 @@ main .zoeken input {
 .membershipcard p:first-of-type {
 	font-weight: bolder;
 }
-
-/***********/
-/*SECTION3*/
-/**********/
-
 
 /***********/
 /*SECTION4*/
