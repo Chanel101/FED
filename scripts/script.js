@@ -81,12 +81,8 @@ function openFormulier() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    addAnimation();
-  }
+  addAnimation();
 });
-
-
 menuButton.addEventListener('click', openMenu);
 exitButton.addEventListener('click', openMenu);
 formButton.addEventListener('click', openFormulier);

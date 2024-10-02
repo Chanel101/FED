@@ -71,6 +71,12 @@ body {
 	animation-fill-mode: forwards;
 }
 
+@media (prefers-reduced-motion: reduce) {
+	body {
+	  animation: none; /* Verwijder de animatie volledig */
+	}
+  }
+
 @keyframes fadeInAnimation {
 	0% {
 		opacity: 0%;
@@ -757,6 +763,12 @@ main .scroller[data-animated="true"] {
 		transform: translate(-100%);
 	}
 }
+
+@media (prefers-reduced-motion: reduce) {
+	main .scroller[data-animated="true"] {
+	  animation: scroll 360s linear infinite;
+	}
+  }
 
 /*************/
 /* SECTION 8 */
