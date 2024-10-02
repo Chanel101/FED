@@ -550,6 +550,12 @@ main .rapport a {
 	height: 4em;
 }
 
+main .rapport a:focus {
+	background-color: var(--color-highlight);
+	color: var(--color-background-block);
+	transition: .5s ease-out;
+}
+
 main .rapport a p {
 	margin-top: 2.3em;
 	color: var(--color-highlight);
@@ -863,6 +869,12 @@ main .cijfersdonker .animals .link {
 	height: 4em;
 }
 
+main .cijfersdonker .animals .link:focus {
+	background-color: var(--color-highlight);
+	color: var(--color-background-block);
+	transition: .5s ease-out;
+}
+
 main .cijfersdonker .animals .link p {
 	margin-top: 1.5em;
 	color: var(--color-highlight);
@@ -953,6 +965,11 @@ main .inschrijven button {
 	margin-bottom: 2em;
 }
 
+main .inschrijven button:focus {
+	background-color: var(--color-highlight);
+	color: var(--color-background-block);
+	transition: .5s ease-out;
+}
 
 main section:nth-of-type(10) {
 	display: flex;
