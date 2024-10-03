@@ -14,6 +14,7 @@
 </head>
 
 <body>
+	<!--HAMBURGERMENU-->
 	<nav id="hamburgermenu" aria-hidden="true" role="navigation">
 		<!--section1 hamburger-->
 		<section>
@@ -108,7 +109,7 @@
 			<img src="images/30jaar.png" alt="30ste verjaardag Pairi Daiza met nummer 30 versierd met alle dieren uit het park.">
 		</section>
 	</nav>
-
+	<!--NAV MET VIDEO-->
 	<nav id="mainNav">
 		<div class="video-background">
 			<video>
@@ -127,8 +128,10 @@
 				</select>
 			</li>
 			<li><button id="menuButton" aria-expanded="false" aria- controls="hamburgermenu"><img src="images/hamburgermenu.png" alt="Menu"></button></li>
+			<!--hier kan aria helpen om te kijken of het hamburgermenu wel open staat of niet en leest dan alleen het hamburger menu voor als hij open is geklapt, want dit is niet het hamburgermenu dus leest hij het niet voor-->
 		</ul>
 	</nav>
+	<!--NAV DIE SCROLLBAAR IS-->
 	<header id="firstHeader" class="headerup">
 		<nav>
 			<ul>
@@ -141,6 +144,7 @@
 						<option value="EN">EN</option>
 					</select></li>
 				<li><button id="menuButton" aria-expanded="false" aria-controls="hamburgermenu"><img src="images/hamburgermenu_zwart.png" alt="Menu"></button></li>
+				<!--hier kan aria helpen om te kijken of het hamburgermenu wel open staat of niet en leest dan alleen het hamburger menu voor als hij open is geklapt, want dit is niet het hamburgermenu dus leest hij het niet voor-->
 			</ul>
 		</nav>
 	</header>
@@ -148,8 +152,8 @@
 		<!-- section1 -->
 		<section class="menu">
 			<h2 class="pauzeenplay">je kan de video pauzeren en afspelen</h2>
-			<button id="playButton" aria-label="Play the video">▶</button>
-			<button id="pauseButton" aria-label="Pause the video">||</button>
+			<button id="playButton" aria-label="Play the video">▶</button> <!--het aria-label maakt de buttons toegankelijker, de screenreader leest de button voor-->
+			<button id="pauseButton" aria-label="Pause the video">||</button> <!--het aria-label maakt de buttons toegankelijker, de screenreader leest de button voor-->
 			<article class="vierkantmenu">
 				<img src="images/aziatischkasteel.jpg" alt="aziatisch kasteel die in het donker belicht wordt met paarse en oranje lichten.">
 				<h2 class="vierkant">Koop</h2>
@@ -350,7 +354,7 @@
 					<option value="Deutsch">Deutsch</option>
 				</select>
 				<label>Naam*</label>
-				<input type="text" required placeholder="Voer uw naam in">
+				<input type="text" required placeholder="Voer uw naam in"> <!--met placeholder kan er een tekst in het invoerveld afbeeld worden wanneer er niks in staat-->
 				<label>Voornaam*</label>
 				<input type="text" required placeholder="Voer uw voornaam in">
 				<label>E-mailadres*</label>

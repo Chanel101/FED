@@ -274,19 +274,18 @@ Ingmar's website (Hema)
   Daarnaast vond het het ook cool dat het scrollen met de navigatiebalk ook wel kan met niet veel lijntjes code.
   Ook de automatische carousel was interessant ook al wil de loop dat oneindig loopt niet werken de animatie werkt wel!
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
+  <img src="readme-images/inschrijvingsformulier.png" width="375px" alt="inschrijfformulier">
+  <img src="readme-images/filteropties.png" width="375px" alt="filteropties">
+  <img src="readme-images/scrollnavbar.png" width="375px" alt="navbar komt tevoorschijn bij het naar boven scrollen">
+  <img src="readme-images/automatischecarousel.png" width="375px" alt="carousel die automatisch afspeelt">
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
   Ik had graag willen hebben dat bij mijn inschrijfformulier dat ik daar een foutmelding kreeg wanneer iets niet goed was ingevuld maar dat lukte me uiteindelijk niet meer. En ik had graag ook nog een pop-up willen maken wanneer de inschrijving gelukt is. Maar daar ben ik niet meer aan toe gekomen.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/inschrijvingsformulier.png" width="375px" alt="er gebeurt niks wanneer ik het formulier invul.">
 </details>
-
-
-
 
 
 ## Bronnenlijst
@@ -303,8 +302,8 @@ Ingmar's website (Hema)
   7.  Hamburgermenu laten verschijnen en verdwijnen via javascript. https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp
   8. https://youtu.be/iLmBy-HKIAw?si=-56qVNNYvvBA1AkZ deze tutorial heb ik gevolgd voor de automatische carousel.
   9. voor de play en pauze button voor de video heb ik deze website gebruikt om me daarbij te helpen. https://www.geeksforgeeks.org/how-to-play-pause-video-using-jquery/
-  10. Voor de het filter systeem met de checkboxes en dat dan bepaalde verdwijnen in de tabel heb ik via chatGPT gedaan, na zeker een hele dag had ik het de dag erna eindelijk gevonden. Met deze prompt: "ik wil voor mijn pagina dat wanneer ik een checkbox aanklik dat alleen die tickets te zien zijn. dat wil ik doen met html css en javascript."
-  11. de prijs wou niet up to date zijn wanneer ik er een ticket bij deed. Met de prompt: "wanneer iemand op de input type number klikt moet het bedrag onderaan naast de button veranderen. hoe doe ik dat met javascript?"
+  10. Voor de het filter systeem met de checkboxes en dat dan bepaalde verdwijnen in de tabel heb ik via chatGPT gedaan, na zeker een hele dag had ik het de dag erna eindelijk gevonden.    Met deze prompt: "ik wil voor mijn pagina dat wanneer ik een checkbox aanklik dat alleen die tickets te zien zijn. dat wil ik doen met html css en javascript."
+  11. de prijs wou niet up to date zijn wanneer ik er een ticket bij deed. Met de prompt: "wanneer iemand op de input type number klikt moet het bedrag onderaan naast de button veranderen.  hoe doe ik dat met javascript?"
   12. de screenreader wou mijn hamburgermenu niet lezen en ik heb dit proberen toegankelijker te maken met chatGPT. Met deze prompt:"ik wil dat de screenreader het hamburgermenu leest wnr die opengeplakt is en niet de andere nav's eerst, met html css en javascript." 
   13. ik had graag de video willen pauzeren en afspelen maar wanneer de gebruiker dat zelf wil maar dat ging niet toen iemand op de video gewoon wou klikken dus heb ik buttons gemaakt om het wat makkelijker te maken. Prompt: "ik wil graag dat je de video kan pauzeren en laten afspelen wanneer de gebruiker dat wil in javascript." ChatGPT
   14. voor light en dark mode kreeg ik veel errors toen ik de code uit de les gebruikte. Hiervoor heb ik aan ChatGPT gevraagd hoe ik dit kon oplossen. "De prompt: wrm krijg ik heel veel error meldingen bij al mijn var voro de kleuren ?"
