@@ -262,7 +262,8 @@ Ingmar's website (Hema)
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/uikomst_pagina1_ChanelVercaemst_Pairi Daiza.png" width="375px" alt="uitkomst opdracht 1, pagina 1">
+  <img src="readme-images/uitkomst_pagina2_ChanelVercaemst_PairiDaiza.png" width="375px" alt="uitkomst opdracht 1, pagina 2">
 
 
   ### Dit ging goed/Heb ik geleerd: 
