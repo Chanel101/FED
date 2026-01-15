@@ -6,61 +6,176 @@
 	<meta name="author" content="Chanel Vercaemst">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Pairi Daiza</title>
+	<title>Pairi Daiza Home</title>
 
 	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/svg+xml" href="images/30jaar.png">
 	<script src="scripts/script.js" defer></script>
 </head>
 
 <body>
-	<header>
+	<!--HAMBURGERMENU-->
+	<nav id="hamburgermenu" aria-hidden="true" role="navigation">
+		<!--section1 hamburger-->
+		<section>
+			<h2>taal</h2>
+			<a href="https://www.pairidaiza.eu/nl/">nl</a>
+			<a href="https://www.pairidaiza.eu/fr/">fr</a>
+			<a href="https://www.pairidaiza.eu/en/">en</a>
+			<a href="https://www.pairidaiza.eu/nl/pairi-daiza-n-v/">contactpagina</a>
+			<button id="exitButton" aria-label="Sluiten">
+				<img src="images/kruisje.png" alt="sluiten">
+			</button>
+		</section>
+		<!--section2 hamburger-->
+		<section>
+			<h2>profiel</h2>
+			<select name="kies profiel" id="profiel">
+				<option value=" ">Kies een profiel</option>
+				<option value="families">Families</option>
+				<option value="groepen">Groepen</option>
+				<option value="evenementen">Evenementen</option>
+				<option value="scholen">Scholen</option>
+			</select>
+		</section>
+		<!--section3 hamburger-->
+		<section>
+			<h2>uitklapmenu</h2>
+			<details>
+				<summary>De ervaring</summary>
+				<a href="https://www.pairidaiza.eu/nl/de-werelden/">de werelden</a>
+				<a href="https://www.pairidaiza.eu/nl/pairi-daiza-resort/">pairi daiza resort</a>
+				<a href="https://www.pairidaiza.eu/nl/pairi-daiza-ervaringen/">pairi daiza ervaringen</a>
+			</details>
+			<details>
+				<summary>Praktische informatie</summary>
+				<a href="https://www.pairidaiza.eu/nl/uw-bezoek-voorbereiden/">uw bezoek voorbereiden</a>
+				<a href="https://www.pairidaiza.eu/nl/uw-bezoek-voorbereiden/openingsuren/">openingsuren</a>
+				<a href="https://www.pairidaiza.eu/nl/dagtickets/">toegangsprijzen</a>
+				<a href="https://www.pairidaiza.eu/nl/membership-card/">membership card</a>
+				<a href="https://www.pairidaiza.eu/nl/uw-bezoek-voorbereiden/eetgelegenheden/">eetgelegenheden</a>
+				<a href="https://www.pairidaiza.eu/nl/uw-bezoek-voorbereiden/shop-plezier/">shop plezier</a>
+				<a href="https://www.pairidaiza.eu/nl/uw-bezoek-voorbereiden/infos-pbm/">info pbm</a>
+			</details>
+			<details>
+				<summary>Foundation</summary>
+				<a href="https://www.pairidaiza.eu/nl/homepagina/together-for-the-animals/">over de foundation</a>
+				<a href="https://www.pairidaiza.eu/nl/homepagina/together-for-the-animals/foundation-visie/fondation-de-projecten/">onze projecten</a>
+				<a href="https://www.pairidaiza.eu/nl/homepagina/together-for-the-animals/foundation-engageer-u/">steun ons</a>
+				<a href="https://www.pairidaiza.eu/nl/homepagina/together-for-the-animals/foundation-engageer-u/foundation-vrijwilliger-worden/">vrijwillige worden</a>
+				<a href="https://www.pairidaiza.eu/nl/homepagina/together-for-the-animals/foundation-visie/">onze visie</a>
+			</details>
+		</section>
+		<!--section4 hamburger-->
+		<section>
+			<h2>koop je ticket</h2>
+			<article>
+				<img src="images/ticketicon.png" alt="koop uw ticket">
+				<h2>koop</h2>
+				<h3>uw ticket</h3>
+				<a href="https://booking.pairidaiza.eu/nl/tickets/?_gl=1*ueb957*_gcl_aw*R0NMLjE3MjY4MzgzNzIuQ2owS0NRand1clMzQmhDR0FSSXNBRGRVSDUwR20xN1cyamtsdnJmY3hyWEZncERJR05ncTk2RVNyYkRVWXdzZ2hNZkpuZHRXbUNYTnlzSWFBa0Z2RUFMd193Y0I.*_gcl_au*MjEwNTYxNzk2Ny4xNzI2MTQyMDkw*_ga*NTkxMTI2MTcwLjE3MjYxNDIwOTA.*_ga_3T64V341SZ*MTcyNjk0MTA5Mi41LjEuMTcyNjk0MzY3Ny4wLjAuMA..">
+					<img class="pijl" src="images/pijltje.png" alt=" "></a>
+			</article>
+			<article>
+				<img src="images/membericon.png" alt="member worden">
+				<h2>member</h2>
+				<h3>worden</h3>
+				<a href="https://www.pairidaiza.eu/nl/ons-aanbod/?_gl=1*5wa8zh*_gcl_aw*R0NMLjE3MjY4MzgzNzIuQ2owS0NRand1clMzQmhDR0FSSXNBRGRVSDUwR20xN1cyamtsdnJmY3hyWEZncERJR05ncTk2RVNyYkRVWXdzZ2hNZkpuZHRXbUNYTnlzSWFBa0Z2RUFMd193Y0I.*_gcl_au*MjEwNTYxNzk2Ny4xNzI2MTQyMDkw*_ga*NTkxMTI2MTcwLjE3MjYxNDIwOTA.*_ga_3T64V341SZ*MTcyNjk0MTA5Mi41LjEuMTcyNjk0Mzg2My4wLjAuMA..">
+					<img class="pijl" src="images/pijltje.png" alt=" "></a>
+			</article>
+			<article>
+				<img src="images/overnachtingicon.png" alt="boek een overnachting">
+				<h2>boek een</h2>
+				<h3>overnachting</h3>
+				<a href="https://booking.pairidaiza.eu/nl/rooms/?duration=1"><img class="pijl" src="images/pijltje.png" alt=" "></a>
+			</article>
+			<article>
+				<img src="images/cadeaubonicon.png" alt="geen een cadeaubon">
+				<h2>geef een</h2>
+				<h3>cadeaubon</h3>
+				<a href="cadeaubonnen.html"><img class="pijl" src="images/pijltje.png" alt=" "></a>
+			</article>
+		</section>
+		<!--section5 hamburger-->
+		<h2>Download onze applicatie</h2>
+		<section>
+			<h2>online apps</h2>
+			<a href="https://apps.apple.com/be/app/pairi-daiza/id1100730159?l=fr"><img src="images/app-store.png" alt="Applestore"></a>
+			<a href="https://play.google.com/store/apps/details?id=eu.pairidaiza.app&hl=fr"><img src="images/google-play.png" alt="playstore Google"></a>
+		</section>
+		<!--section6 hamburger-->
+		<section>
+			<p>Pairi Daiza</p>
+			<h2>bestaat 30 jaar!</h2>
+			<a href="https://www.pairidaiza.eu/nl/30-jaar/"><img alt="pijl" class="pijl" src="images/pijltje.png"></a>
+			<img src="images/30jaar.png" alt="30ste verjaardag Pairi Daiza met nummer 30 versierd met alle dieren uit het park.">
+		</section>
+	</nav>
+	<!--NAV MET VIDEO-->
+	<nav id="mainNav">
+		<div class="video-background">
+			<video>
+				<source src="/video/pairidaiza-home-nl.mp4" type="video/mp4">
+			</video>
+		</div>
+		<ul>
+			<li><a href="#"><img class="logo" src="images/logo_wit_geentekst.png" alt="Logo Pairi Daiza. Kindje die op een olifant zit."></a></li>
+			<li><a href="https://www.pairidaiza.eu/nl/zoek/"><img src="images/zoeken.png" alt="Zoeken"></a></li>
+			<li><a href="https://booking.pairidaiza.eu/nl/basket/"><img src="images/winkelmandje.png" alt="Winkelmandje"></a></li>
+			<li>
+				<select name="taal" id="taal-selecteren">
+					<option value="NL">NL</option>
+					<option value="FR">FR</option>
+					<option value="EN">EN</option>
+				</select>
+			</li>
+			<li><button id="menuButton" aria-expanded="false" aria- controls="hamburgermenu"><img src="images/hamburgermenu.png" alt="Menu"></button></li>
+			<!--hier kan aria helpen om te kijken of het hamburgermenu wel open staat of niet en leest dan alleen het hamburger menu voor als hij open is geklapt, want dit is niet het 					hamburgermenu dus leest hij het niet voor-->
+		</ul>
+	</nav>
+	<!--NAV DIE SCROLLBAAR IS-->
+	<header id="firstHeader" class="headerup">
 		<nav>
-			<iframe src="video/pairidaiza-home-nl.mp4" frameborder="0"></iframe>
 			<ul>
-				<li><a href="https://www.pairidaiza.eu/nl/"><img src="images/logo_zwart_geentekst.png"
-							alt="Logo Pairi Daiza. Kindje die op een olifant zit."></a></li>
-				<li><a href="https://www.pairidaiza.eu/nl/zoek/"><img src="images/zoeken.png" alt=" "></a></li>
-				<li><a href="https://booking.pairidaiza.eu/nl/basket/"><img src="images/winkelmandje.png" alt=" "></a>
-				</li>
-				<li><a href="#"><img src="images/nl.png" alt="taal Nederlands"></a></li>
-				<li><a href="#"><img src="images/hamburgermenu.png" alt=" "></a></li>
+				<li><a href="#"><img class="logo" src="images/logo_zwart_geentekst.png" alt="Logo Pairi Daiza. Kindje die op een olifant zit."></a></li>
+				<li><a href="https://www.pairidaiza.eu/nl/zoek/"><img src="images/zoeken_zwart.png" alt=" "></a></li>
+				<li><a href="https://booking.pairidaiza.eu/nl/basket/"><img src="images/winkelmandje_zwart.png" alt=" "></a></li>
+				<li><select name="taal" id="taal">
+						<option value="NL">NL</option>
+						<option value="FR">FR</option>
+						<option value="EN">EN</option>
+					</select></li>
+				<li><button id="menuButton" aria-expanded="false" aria-controls="hamburgermenu"><img src="images/hamburgermenu_zwart.png" alt="Menu"></button></li>
+				<!--hier kan aria helpen om te kijken of het hamburgermenu wel open staat of niet en leest dan alleen het hamburger menu voor als hij open is geklapt, want dit is niet het 					hamburgermenu dus leest hij het niet voor-->
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<section>
-			<article>
-				<figure>
-					<img src="images/aziatischkasteel.jpg"
-						alt="aziatisch kasteel die in het donker belicht wordt met paarse en oranje lichten.">
-				</figure>
-				<h2>Koop</h2>
+		<!-- section1 -->
+		<section class="menu">
+			<h2 class="pauzeenplay">je kan de video pauzeren en afspelen</h2>
+			<button id="playButton" aria-label="Play the video">▶</button> <!--het aria-label maakt de buttons toegankelijker, de screenreader leest de button voor-->
+			<button id="pauseButton" aria-label="Pause the video">||</button> <!--het aria-label maakt de buttons toegankelijker, de screenreader leest de button voor-->
+			<article class="vierkantmenu">
+				<img src="images/aziatischkasteel.jpg" alt="aziatisch kasteel die in het donker belicht wordt met paarse en oranje lichten.">
+				<h2 class="vierkant">Koop</h2>
 				<h3>uw ticket</h3>
-				<svg data-v-87236ad0="" role="presentation" class="icon" width="36" height="36" viewBox="0 0 36 36">
-					<use xmlns:xlink="http://www.w3.org/1999/xlink" href="#ui-chevron-right"
-						xlink-href="#ui-chevron-right"></use>
-				</svg>
+				<a href="https://booking.pairidaiza.eu/nl/tickets/"><img class="pijl" src="images/pijltje.png" alt=" "></a>
 			</article>
-			<article></article>
-			<figure>
-				<img src="images/walrusmetkind.jpg"
-					alt="een walrus die oog in oog staat met een kind, met een rode hoodie.">
-			</figure>
-			<h2>Boek</h2>
-			<h3>uw verblijf</h3>
-			<svg data-v-87236ad0="" role="presentation" class="icon" width="36" height="36" viewBox="0 0 36 36">
-				<use xmlns:xlink="http://www.w3.org/1999/xlink" href="#ui-chevron-right" xlink-href="#ui-chevron-right">
-				</use>
-			</svg>
+			<article class="vierkantmenu">
+				<img src="images/walrusmetkind.jpg" alt="een walrus die oog in oog staat met een kind, met een rode hoodie.">
+				<h2 class="vierkant">Boek</h2>
+				<h3>uw verblijf</h3>
+				<a href="https://booking.pairidaiza.eu/nl/rooms/?duration=1"><img class="pijl" src="images/pijltje.png" alt=" "></a>
 			</article>
-			<article>
-				<h3>"365 dagen/jaar"</h3>
-				<h4>Vanaf 105 euro</h4>
-
+			<article class="abonnement">
+				<h2>"365 dagen/jaar"</h2>
+				<h3>Vanaf 105 euro</h3>
+				<a href="https://webshop.pairidaiza.eu/Membership/Overview"><img class="pijl" src="images/pijltje.png" alt=" "></a>
 			</article>
 		</section>
-		<section>
+		<!--section2-->
+		<section class="intro">
 			<h1>Reis de wereld rond in één dag of verblijf in het Park!</h1>
 			<p>Bekroond als "Beste Dierentuin van Europa" op meerdere gelegenheden, en gecertificeerd met "Drie Sterren"
 				in de Michelin Groene Gids, neemt Pairi Daiza je mee op een reis naar de vijf continenten, om meer dan
@@ -68,225 +183,329 @@
 				walrussen… Meer dan 800 diersoorten worden beschermd in Pairi Daiza, in negen werelden waar authentieke
 				gebouwen, gevarieerde beplantingen, halfedelstenen en de zeldzaamste culturele wonderen je meenemen naar
 				alle uithoeken van de planeet.</p>
-			<p>Een tuin zoals geen ander ter wereld, te ontdekken in één dag of tijdens een verblijf zo dicht mogelijk
-				bij de leefgebieden van de dieren. Want bij Pairi Daiza kun je ook dicht bij wolven, bruine en zwarte
-				beren, ijsberen, walrussen, pinguïns, Siberische tijgers en meer overnachten.</p>
+			<p>Een tuin zoals geen ander ter wereld, te ontdekken in één dag of tijdens een verblijf zo dicht mogelijk bij de leefgebieden van de dieren. Want bij Pairi Daiza kun je ook 					dicht bij wolven, bruine en zwarte beren, ijsberen, walrussen, pinguïns, Siberische tijgers en meer overnachten.</p>
 		</section>
-		<section>
+		<!--section3-->
+		<section class="rapport">
+			<img src="https://cms.pairidaiza.eu/thumbor/qtyzJXrFJGbECtinyjINsFCqbLo=/fit-in/1024x/filters:quality(92)/--/uploads/2024/06/MORSE-SOLENE-4x3-450dpi-BG-V02-min.jpg"
+				alt="Vrouw met bruin haar, die oog in oog staat met een walrus.">
 			<h2>Al onze projecten samengebracht in één verslag</h2>
 			<p>Wij presenteren u graag het "Rapport 2023/Pairi Daiza Conversation". Hierin ontdekt u alle projecten die
-				door Pairi Daiza en zijn Foundation worden odnersteund en geninacierd, of ze nu gericht zijn op het
+				door Pairi Daiza en zijn Foundation worden ondersteund en geninacierd, of ze nu gericht zijn op het
 				herstellen van vernietigde habitats, het ontwikkelen van wetenschappelijk onderzoek, het herintroduceren
 				van bedreigde soorten, het verzorgen van gewonde dieren of het sensibiliseren voor natuurbescherming.
 				Meer dan dertig projecten worden hierin opgesomd.</p>
-			<img src="https://cms.pairidaiza.eu/thumbor/qtyzJXrFJGbECtinyjINsFCqbLo=/fit-in/1024x/filters:quality(92)/--/uploads/2024/06/MORSE-SOLENE-4x3-450dpi-BG-V02-min.jpg"
-				alt="Vrouw, bruin haar die oog in oog staat met een walrus.">
-			<a href="https://www.paperturn-view.com/?pid=ODg8817664">Ontdek het rapport</a>
+			<a href="https://www.paperturn-view.com/?pid=ODg8817664">Ontdek het rapport <p>></p></a>
 		</section>
-		<section>
-			<h1>Enkele cijfers</h1>
+		<!--section4-->
+		<section class="cijfers">
+			<h2>Enkele cijfers</h2>
 			<article>
-				<h3>75</h3>
+				<h2>75</h2>
 				<p>Hectare</p>
 			</article>
 			<article>
-				<h3>9</h3>
+				<h2>9</h2>
 				<p>Werelden</p>
 			</article>
 			<article>
-				<h3>800</h3>
+				<h2>800</h2>
 				<p>Diersoorten</p>
 			</article>
 			<article>
-				<h3>121</h3>
+				<h2>121</h2>
 				<p>Overnachtingsmogelijkheden</p>
 			</article>
 		</section>
-		<section>
+		<!--section5-->
+		<section class="carouselbol">
 			<h2>Niet te missen tijdens uw bezoek</h2>
 			<ul>
 				<li><img src="images/pandaberen.jpg" alt="twee panda's die naast elkaar lopen.">
-					<h4>Zeldzame diersoorten</h4>
+					<h3>Zeldzame diersoorten</h3>
 				</li>
 				<li><img src="images/bloemen.jpg"
 						alt="een bloemenperk met een standbeeld en in de achtergrond een grote toren.">
-					<h4>Kleurrijke tuinen</h4>
+					<h3>Kleurrijke tuinen</h3>
 				</li>
 				<li><img src="images/halfedelsteen.jpg"
 						alt="Een blauwe met bruin half edelsteen, zo groot als een persoon.">
-					<h4>Prachtige halfedelstenen</h4>
+					<h3>Prachtige halfedelstenen</h3>
 				</li>
 				<li><img src="images/aziatischkasteel.jpg" alt=" ">
-					<h4>Authentieke monumenten</h4>
+					<h3>Authentieke monumenten</h3>
 				</li>
 				<li><img src="images/traditioneledans.jpg"
 						alt="dansers in traditionele aziatische klederdracht, die ook een optreden opvoeren">
-					<h4>Culturele rijkdommen</h4>
+					<h3>Culturele rijkdommen</h3>
 				</li>
 			</ul>
 		</section>
-		<section>
+		<!--section6-->
+		<section class="carousel">
 			<ul>
 				<li><img src="images/hert.jpg" alt=" ">
-					<h4>Dagtickets</h4><a href="https://www.pairidaiza.eu/nl/dagtickets/"></a>
+					<h2>Dagtickets</h2>
+					<a href="https://www.pairidaiza.eu/nl/dagtickets/"><img class="pijl" src="images/pijltje.png" alt=" "></a>
 				</li>
 				<li><img src="images/indonesië.jpg" alt=" ">
-					<h4>Membership Card</h4><a href="https://www.pairidaiza.eu/nl/membership-card/"></a>
+					<h2>Membership Card</h2>
+					<a href="https://www.pairidaiza.eu/nl/membership-card/"><img class="pijl" src="images/pijltje.png" alt=" "></a>
 				</li>
 				<li><img src="images/verblijfwalrus.jpg" alt=" ">
-					<h4>Resort</h4><a href="https://www.pairidaiza.eu/nl/pairi-daiza-resort/"></a>
+					<h2>Resort</h2>
+					<a href="https://www.pairidaiza.eu/nl/pairi-daiza-resort/"><img class="pijl" src="images/pijltje.png" alt=" "></a>
 				</li>
 			</ul>
 		</section>
-		<section>
-			<ul>
+		<!--section7-->
+		<section class="carouselautomatisch">
+			<ul class="scroller">
 				<li><img src="images/trappen.jpg" alt="">
-					<h4>Indonesische tempels</h4>
+					<h2>Indonesische tempels</h2>
 				</li>
 				<li><img src="images/walrus2.jpg" alt="interactie met walrus">
-					<h4>Interactie met de dieren</h4>
+					<h2>Interactie met de dieren</h2>
 				</li>
 				<li><img src="images/olifant.jpg" alt="">
-					<h4>Achttien olifanten</h4>
+					<h2>Achttien olifanten</h2>
 				</li>
 				<li><img src="images/ijsberen.jpg" alt="twee ijsberen">
-					<h4>Ijsberen</h4>
+					<h2>Ijsberen</h2>
 				</li>
 				<li><img src="images/stoomtrein.jpg" alt=" ">
-					<h4>Authentieke Stoomtrein</h4>
+					<h2>Authentieke Stoomtrein</h2>
 				</li>
 				<li><img src="images/panda.jpg" alt=" ">
-					<h4>Vijf reuzenpanda's</h4>
+					<h2>Vijf reuzenpanda's</h2>
 				</li>
 				<li><img src="images/boerderij.jpg" alt=" ">
-					<h4>De Boederij</h4>
+					<h2>De Boederij</h2>
 				</li>
 				<li><img src="images/kleineoerangoetan.jpg" alt=" ">
-					<h4>Orang-oetans</h4>
+					<h2>Orang-oetans</h2>
 				</li>
 				<li><img src="images/hal.jpg" alt="Grote inkomhal met een grote klok aan de ingang.">
-					<h4>The Gallery Of Worlds</h4>
+					<h2>The Gallery Of Worlds</h2>
 				</li>
 			</ul>
 		</section>
-		<section>
+		<!--section8-->
+		<section class="cijfersdonker">
 			<h2>De Pairi Daiza Foundation</h2>
 			<article>
-				<h3>18</h3>
+				<h2>18</h2>
 				<p>Lopende natuurbeschermingsprojecten</p>
 			</article>
 			<article>
-				<h3>21</h3>
+				<h2>21</h2>
 				<p>Spix' ara's uitgezet in Brazilië</p>
 			</article>
 			<article>
-				<h3>11.000</h3>
+				<h2>11.000</h2>
 				<p>Bomen aangeplant in Borneo</p>
 			</article>
-			<article>
+			<figure class="gradient">
 				<img src="images/tijger.png" alt="tijger die aan het gapen is.">
-			</article>
-			<article>
+			</figure>
+			<article class="animals">
 				<h2>Samen de wonderen van de natuur beschermen</h2>
 				<p>De missie van Pairi Daiza en haar Foundation is om de wonderen van de natuur te beschermen, te
 					behouden en te redden. Het herintroduceren van ara's in Brazilië, het beschermen van de orang-oetans
 					van Borneo, het ontdekken van het eerste vaccin om babyolifanten te redden, het creëren van het
 					grootste 'natuurlijke' bos in België, enzovoort. Meer dan 20 projecten zijn momenteel aan de gang in
 					België en over de hele wereld. Dankzij jou. Samen met jou.</p>
-				<p>Lees hier het <a href="https://www.paperturn-view.com/?pid=ODg8817664&p=9">Pairi Daiza Foundation
-						rapport 2023</a></p>
-				<a href="https://www.pairidaiza.eu/nl/together-for-the-animals/">Together for the animals</a>
+				<p>Lees hier het <a href="https://www.paperturn-view.com/?pid=ODg8817664&p=9">Pairi DaizaFoundationrapport 2023</a></p>
+				<a class='link' href="https://www.pairidaiza.eu/nl/together-for-the-animals/">Together for the animals<p>></p></a>
 			</article>
 		</section>
-		<section>
-			<h5>Member</h5>
+		<!--section9-->
+		<section class="member">
+			<h2>Member</h2>
 			<h2>Word Pairi Daiza Member</h2>
-			<h4>Vanaf 105 euro/jaar</h4>
+			<h3>Vanaf 105 euro/jaar</h3>
 			<p>Geniet 365 dagen lang van Pairi Daiza, de tuinen veranderen met de seizoenen en de activiteiten, met
 				uitzondering van de enkele dagen dat het gesloten is in januari en februari. En profiteer van vele
 				andere voordelen en kortingen!</p>
-			<a href="https://www.pairidaiza.eu/nl/ons-aanbod/">Member worden</a>
+				<a class="link" href="https://www.pairidaiza.eu/nl/ons-aanbod/">Member worden<p>></p></a>
+		</section>
+		<article class="inschrijven">
+			<h2>Abonneer je op onze nieuwsbrief</h2>
+			<button id="inschrijfButton">Inschrijven ></button>
+		</article>
+		<!--section10-->
+		<section id="inschrijvingsformulier">
+			<form action="inschrijven">
+				<button id="closeButton" type="button">
+					<img src="images/kruisje.png" alt="sluiten">
+				</button>
+				<h2>Inschrijving nieuwsbrief</h2>
+				<label>Aanspreking*</label>
+				<select name="aanspreking" id="aansprekingkiezen">
+					<option value="Mevrouw">Mevrouw</option>
+					<option value="Meneer">Meneer</option>
+					<option value="Liever niet">Zeg ik liever niet</option>
+				</select>
+				<label>Taal*</label>
+				<select name="Taal" id="taal-nieuwsbrief">
+					<option value="Français">Français</option>
+					<option value="Nederlands">Nederlands</option>
+					<option value="Deutsch">Deutsch</option>
+				</select>
+				<label>Naam*</label>
+				<input type="text" required placeholder="Voer uw naam in"> <!--met placeholder kan er een tekst in het invoerveld afbeeld worden wanneer er niks in staat-->
+				<label>Voornaam*</label>
+				<input type="text" required placeholder="Voer uw voornaam in">
+				<label>E-mailadres*</label>
+				<input type="email" required placeholder="E-mailadres">
+				<input type="checkbox">
+				<p>Ja, ik wil me abonneren op de nieuwsbrief van Pairi Daiza en ik ga ermee akkoord dat deze e-mails
+					worden aangepast aan mijn persoonlijke interesses. Ik ben me ervan bewust dat ik mijn toestemming op
+					elk moment kan intrekken via de volgende link. Ik ga ook akkoord met het beleid inzake de
+					bescherming van persoonsgegevens.</p>
+			</form>
+			<button id="inschrijfButton2" type="submit">Inschrijven ></button>
 		</section>
 	</main>
 	<footer>
+		<!--section1-->
+		<label>
+			<input type="radio" name="theme" value="auto" checked> auto
+		</label>
+		<label>
+			<input type="radio" name="theme" value="light"> licht
+		</label>
+		<label>
+			<input type="radio" name="theme" value="dark"> donker
+		</label>
+		<article>
+			<h2 class="h2wegwerken">info over Pairi Daiza uitklapmenu</h2>
+			<details>
+				<summary>Over Pairi Daiza</summary>
+				<a href="https://www.pairidaiza.eu/nl/pairi-daiza-n-v/">
+					<p>Pairi Daiza n.v.</p>
+				</a>
+				<a href="https://www.pairidaiza.eu/nl/filosofie/">
+					<p>Filosofie</p>
+				</a>
+				<a href="https://www.pairidaiza.eu/nl/jobs/">
+					<p>Jobs</p>
+				</a>
+				<a href="https://www.pairidaiza.eu/nl/persvoorlichting/">
+					<p>Persvoorlichting</p>
+				</a>
+				<a href="https://www.pairidaiza.eu/nl/partners/">
+					<p>Partners</p>
+				</a>
+				<a href="https://www.pairidaiza.eu/nl/faq/">
+					<p>faq</p>
+				</a>
+			</details>
+			<details>
+				<summary>De Pairi Daiza ervaring</summary>
+				<a href="https://www.pairidaiza.eu/nl/de-werelden/">
+					<p>De werelden</p>
+				</a>
+				<a href="https://www.pairidaiza.eu/nl/pairi-daiza-ervaringen/">
+					<p>Pairi Daiza ervaringen</p>
+				</a>
+				<a href="https://www.pairidaiza.eu/nl/pairi-daiza-resort/">
+					<p>Pairi Daiza resort</p>
+				</a>
+			</details>
+			<details>
+				<summary>Pairi Daiza Foundation</summary>
+				<a href="https://www.pairidaiza.eu/nl/homepagina/together-for-the-animals/foundation-visie/foundation-onze-missie/">
+					<p>Onze missie</p>
+				</a>
+				<a href="https://www.pairidaiza.eu/nl/homepagina/together-for-the-animals/foundation-visie/fondation-de-projecten/">
+					<p>De projecten</p>
+				</a>
+				<a href="https://www.pairidaiza.eu/nl/homepagina/together-for-the-animals/foundation-engageer-u/">
+					<p>Engageer u</p>
+				</a>
+			</details>
+			<details>
+				<summary>Juridische Mededelingen</summary>
+				<a href="https://www.pairidaiza.eu/nl/algemene-verkoopsvoorwaarden/">
+					<p>Algemene verkoopsvoorwaarden</p>
+				</a>
+				<a href="https://www.pairidaiza.eu/nl/algemeen-beleid-voor-de-bescherming-voor-persoonsgegevens/">
+					<p>Algemeen beleid voor de bescherming voor persoonsgegevens</p>
+				</a>
+				<a href="https://www.pairidaiza.eu/nl/cookies-beleid/">
+					<p>Cookies-beleid</p>
+				</a>
+				<a href="https://www.pairidaiza.eu/nl/reglement-van-pairi-daiza/">
+					<p>Reglement van Pairi Daiza</p>
+				</a>
+			</details>
+		</article>
+		<!--section2-->
 		<section>
-		<ul>
-			<li>
-				<h3>Over Pairi Daiza</h3>
-			</li>
-			<li>
-				<h3>De Pairi Daiza ervaring</h3>
-			</li>
-			<li>
-				<h3>Pairi Daiza Foundation</h3>
-			</li>
-			<li>
-				<h3>Juridische Mededelingen</h3>
-			</li>
-		</ul>
-	</section>
-	<section>
-		<ul>
-			<li><img src="images/pijltje.png" alt=" "><a href="https://www.pairidaiza.eu/nl/voor-families/"></a>
-				<h6>voor</h6>
-				<h6>families</h6>
-			</li>
-			<li><img src="images/pijltje.png" alt=" "><a href="https://www.pairidaiza.eu/nl/evenementen/"></a>
-				<h6>voor</h6>
-				<h6>bedrijven</h6>
-			</li>
-			<li><img src="images/pijltje.png" alt=" "><a href="https://www.pairidaiza.eu/nl/groepen/"></a>
-				<h6>voor</h6>
-				<h6>groepen</h6>
-			</li>
-			<li><img src="images/pijltje.png" alt=" "><a href="https://www.pairidaiza.eu/nl/scholen/"></a>
-				<h6>voor</h6>
-				<h6>scholen</h6>
-			</li>
-		</ul>
+			<h2 class="h2wegwerken">kiezen voor een uitstap, met wie?</h2>
+			<article>
+				<a href="https://www.pairidaiza.eu/nl/voor-families/"><img src="images/pijltje.png" alt=" "></a>
+				<p>voor</p>
+				<h2>families</h2>
+			</article>
+			<article>
+				<a href="https://www.pairidaiza.eu/nl/evenementen/"><img src="images/pijltje.png" alt=" "></a>
+				<p>voor</p>
+				<h2>bedrijven</h2>
+			</article>
+			<article>
+				<a href="https://www.pairidaiza.eu/nl/groepen/"><img src="images/pijltje.png" alt=" "></a>
+				<p>voor</p>
+				<h2>groepen</h2>
+			</article>
+			<article>
+				<a href="https://www.pairidaiza.eu/nl/scholen/"><img src="images/pijltje.png" alt=" "></a>
+				<p>voor</p>
+				<h2>scholen</h2>
+			</article>
 		</section>
+		<!--section3-->
 		<section>
+			<h2>Pairi Daiza</h2>
 			<address>
-				<h5>Pairi Daiza</h5>
-				<h5>Domaine de Cambron</h5>
-				<h5>7940 Brugelette</h5>
-				<h5>Belgique</h5>
-				<h5>+32 (0) 68 250 850</h5>
-				<h5>info@pairidaiza.eu</h5>
+				<p>Domaine de Cambron</p>
+				<p>7940 Brugelette</p>
+				<p>Belgique</p>
+				<p>+32 (0) 68 250 850</p>
+				<p>info@pairidaiza.eu</p>
 			</address>
 		</section>
+		<!--section4-->
 		<section>
-			<h5>Onze toepassingen</h5>
-			<a href="https://apps.apple.com/be/app/pairi-daiza/id1100730159?l=fr"><img src="images/app-store.png"
-					alt=" "></a><a href="https://play.google.com/store/apps/details?id=eu.pairidaiza.app&hl=fr"><img
-					src="images/google-play.png" alt=" "></a>
+			<h2>Onze toepassingen</h2>
+			<a href="https://apps.apple.com/be/app/pairi-daiza/id1100730159?l=fr"><img src="images/app-store.png" alt=" "></a>
+			<a href="https://play.google.com/store/apps/details?id=eu.pairidaiza.app&hl=fr"><img src="images/google-play.png" alt=" "></a>
 		</section>
+		<!--section5-->
 		<section>
-			<h5>Volg ons</h5>
-			<ul>
-				<li><a href="https://www.facebook.com/JardinDesMondes/"><img src="images/facebook.png"
-							alt="Facebook"></a></li>
-				<li><a href="https://www.instagram.com/pairidaizaofficial"><img src="images/instagram.png"
-							alt="Instagram"></a></li>
-				<li><a href="https://www.linkedin.com/company/1787793"><img src="images/linkedin.png"
-							alt="LinkedIn"></a></li>
-				<li><a href="https://www.youtube.com/channel/UCos9QVdxjj5SWIO9dbg9ARg"><img src="images/youtube.png"
-							alt="YouTube"></a></li>
+			<h2>Volg ons</h2>
+			<ul class="socials">
+				<li><a href="https://www.facebook.com/JardinDesMondes/"><img src="images/facebook.png" alt="Facebook"></a></li>
+				<li><a href="https://www.instagram.com/pairidaizaofficial"><img src="images/instagram.png" alt="Instagram"></a></li>
+				<li><a href="https://www.linkedin.com/company/1787793"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
+				<li><a href="https://www.youtube.com/channel/UCos9QVdxjj5SWIO9dbg9ARg"><img src="images/youtube.png" alt="YouTube"></a></li>
 			</ul>
-			<h5>Abonneer je op onze nieuwsbrief</h5>
-			<button>Inschrijven</button>
 		</section>
+		<!--section6-->
 		<section>
+			<h2 class="h2wegwerken">informatie over de website zelf</h2>
 			<ul>
 				<li><a href="https://www.pairidaiza.eu/nl/reglement-van-pairi-daiza/">Reglement van Pairi Daiza</a></li>
 				<li><a href="https://www.pairidaiza.eu/nl/cookies-beleid/">Cookies-beleid</a></li>
 				<li><a
-						href="https://www.pairidaiza.eu/nl/algemeen-beleid-voor-de-bescherming-voor-persoonsgegevens/"></a>Privacybeleid
+						href="https://www.pairidaiza.eu/nl/algemeen-beleid-voor-de-bescherming-voor-persoonsgegevens/">Privacybeleid</a>
 				</li>
 				<li><a href="https://www.pairidaiza.eu/">Cookie settings</a></li>
 			</ul>
+			<p class="copyright">Copyright © Pairi Daiza 2024</p>
 		</section>
-		<p>Copyright © Pairi Daiza 2024</p>
 	</footer>
 </body>
+
 </html>
