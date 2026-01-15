@@ -86,7 +86,7 @@ Ingmar's website (Hema)
   <img src="readme-images/breakdownschets_3.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/navigatie_breakdownschets.png width="375px" alt="breakdown van een dynamisch deel, de navigatie met en hamburgermenu">
+  <img src="readme-images/navigatie_breakdownschets.png" width="375px" alt="breakdown van een dynamisch deel, de navigatie met en hamburgermenu">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/inschrijfformulier_breakdownschets.png" width="375px" alt="breakdown van het inschrijfformulier">
